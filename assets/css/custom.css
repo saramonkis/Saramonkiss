@@ -1,11 +1,11 @@
 /* === HEADER (barra superior) === */
-.site-header { background-color: #E00034 !important; }
+.site-header { background-color: #ee27acce !important; }
 .site-title, .site-nav a { color: #ffffff !important; }
 
 /* === ENLACES EN CONTENIDO (sin morado/azul y con subrayado del color) === */
 :root { --link-color: #E00034; }
 a, a:visited { color: var(--link-color); }
-a { text-decoration-color: rgba(224, 0, 52, 0.4); }
+a { text-decoration-color: rgba(216, 0, 224, 0.4); }
 a:hover { color: #b00028; text-decoration-color: rgba(176, 0, 40, 0.6); }
 a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
 
@@ -16,7 +16,7 @@ a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
 
 /* Título del sitio en el sidebar */
 .side-bar .site-title {
-  color: #ffffff !important;
+  color: #130202 !important;
   font-weight: 500;
   font-size: 1.4rem;
 }
