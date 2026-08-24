@@ -23,7 +23,7 @@ En este curso vamos a publicar tu documentación como un **sitio web** usando:
 - **GitHub Pages**: servicio que publica tu repo como sitio web.
 - **Pipeline (Actions)**: proceso automático que construye y publica el sitio cuando haces *push*.
 
-![Figura 1 — GitHub](assets/img/01-publicar/github.png)
+![Figura 1 — GitHub](assets/img/01-publicar/github.png) 
 **Figura 1:** Página principal de GitHub.
 
 ---
