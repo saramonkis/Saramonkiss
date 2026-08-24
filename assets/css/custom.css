@@ -6,7 +6,7 @@
 :root { --link-color: #f7249f; }
 a, a:visited { color: var(--link-color); }
 a { text-decoration-color: rgba(216, 0, 224, 0.4); }
-a:hover { color: #f7249f; text-decoration-color: (176, 0, 40, 0.6); }
+a:hover { color: #f7249f; text-decoration-color: f7249f (176, 0, 40, 0.6); }
 a:focus { outline: 2px solid #FFD5DE; outline-offset: 2px; }
 
 /* === SIDEBAR ROJO COMPLETO === */
