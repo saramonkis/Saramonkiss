@@ -3,27 +3,29 @@ layout: default
 title: Semana 1: Portafolio web
 nav_order: 3
 ---
+# Semana 1 
+**Pasos de como se elaboro la pestaña de acerca de mi**
 
-# Pasos de como se elaboro la pestaña de acerca de mi 
-
-- 1)Se cambio la informacion default del pie de pagina en el cual agregue mi instagram, esto es el apartado de includes en la carpeta de footer custom.
+- 1) Se cambió la información default del pie de página, en el cual agregué mi Instagram. Esto es en el apartado de includes, en la carpeta de footer custom.
 
 ![Paso 1][imagen1]
-- 2)Luego en el apartado de index puse todas las pestañas que iba a tener la pagina web asi como el proposito de mi repositorio.
+
+- 2) Luego, en el apartado de index, puse todas las pestañas que iba a tener la página web, así como el propósito de mi repositorio.
 
 ![Paso 2][imagen2]
-- 3)Se cambio completamente el codigo de custom.css con ayuda de chat y el promt fue 
-"Quiero que el margen de la izquierda tenga un color rosa pastel , los selectores de pestañas que sean un rosa un poco mas fuerte pero igual claro" . En este apartado lo unico que se modifico fue la tematica de color a rosa. 
+
+- 3) Se cambió completamente el código de custom.css con ayuda de Chat y el prompt fue:
+"Quiero que el margen de la izquierda tenga un color rosa pastel, los selectores de pestañas que sean un rosa un poco más fuerte pero igual claro". En este apartado lo único que se modificó fue la temática de color a rosa.
 
 ![Paso 3][imagen3]
 
-- 4)En este paso se agregaron las imagenes, la manera de pasarlos a "02-estructura" fue arrastrabdo el archivo de la foto.
+- 4) En este paso se agregaron las imágenes. La manera de pasarlas a "02-estructura" fue arrastrando el archivo de la foto.
 
 ![Paso 4][imagen5]
 
-- 5) Por ultimo se borro toda la informacion que habia antes y se modifico por mi informacion personal y se agregaron las fotos que se iban a usar en el apartado "Acerca de mi".
+- 5) Por último se borró toda la información que había antes y se modificó por mi información personal. También se agregaron las fotos que se iban a usar en el apartado "Acerca de mí".
 
-![Paso 5 ][imagen4]
+![Paso 5][imagen4]
 
 
 
