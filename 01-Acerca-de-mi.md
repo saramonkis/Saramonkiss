@@ -38,3 +38,4 @@ Nací el 13 de junio de 2008 en Caracas, Venezuela. En 2016 tuve que mudarme a M
 [def5]: assets/img/01-publicar/animalcrosin.jpeg
 [def6]: assets/img/01-publicar/fam.jpeg
 [def7]: assets/img/01-publicar/amigos.jpeg
+
