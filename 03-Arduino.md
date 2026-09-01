@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Semana 2
+title: Arduino
 nav_order: 4
 ---
 
