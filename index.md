@@ -17,6 +17,6 @@ Contenido:
 - [3. Arduino][03]
 
 
-[03]: 03-Arduino
+[03]: 03-Arduino.md
 [01]: 01-Acerca-de-mi.md
 [02]: 02-semana-1.md
