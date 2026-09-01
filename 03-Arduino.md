@@ -25,8 +25,8 @@ También es posible aprender a utilizar Arduino sin tener físicamente todos los
 
 Arduino es una herramienta muy útil para comenzar a comprender cómo se relacionan el software y el hardware. Con esta plataforma se pueden desarrollar proyectos sencillos, como un semáforo, y proyectos más avanzados, como robots, sistemas de riego automático, alarmas, controles de acceso o dispositivos de automatización para el hogar
 
-https://www.educ.ar/recursos/156851/conoce-arduino-una-introduccion-a-la-programacion-y-la-robot
-https://intef.es/observatorio_tecno/arduino-tecnologia-y-creatividad-en-tus-manos/
+[Sitio de información][info1]
+[Sitio de información][info2]
 
 
 
@@ -35,3 +35,5 @@ https://intef.es/observatorio_tecno/arduino-tecnologia-y-creatividad-en-tus-mano
 
 
 [img 1]: <assets/img/03-arduino/arduino .png>
+[info2]: https://intef.es/observatorio_tecno/arduino-tecnologia-y-creatividad-en-tus-manos/
+[info1]: https://www.educ.ar/recursos/156851/conoce-arduino-una-introduccion-a-la-programacion-y-la-robot
