@@ -12,7 +12,7 @@ Arduino es una plataforma electrónica de código abierto compuesta por una plac
 
 La placa Arduino contiene un microcontrolador, el cual funciona como el “cerebro” del circuito. Este componente recibe información por medio de sus entradas, procesa las instrucciones del programa y genera una respuesta mediante sus salidas. Por ejemplo, Arduino puede detectar cuando se presiona un botón y, como respuesta, encender un LED, mover un motor o activar una alarma. (Educ.ar, 2021)
 
-![Arduino][img 1]
+![Arduino](assets/img/03-arduino/arduino .png)
 
 **¿Cómo se utiliza Arduino?**
 
@@ -29,7 +29,7 @@ La placa Arduino contiene un microcontrolador, el cual funciona como el “cereb
 [Sitio de información][info2]
 
 
-[img 1]: <assets/img/03-arduino/arduino .png>
+
 [info2]: https://intef.es/observatorio_tecno/arduino-tecnologia-y-creatividad-en-tus-manos/
 [info1]: https://www.educ.ar/recursos/156851/conoce-arduino-una-introduccion-a-la-programacion-y-la-robot
 
