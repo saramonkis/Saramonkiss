@@ -293,7 +293,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 ![Circuito 9 físico]({{ '/assets/img/03-arduino/foto 9.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/9-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video9.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 9.</em></p>
