@@ -4,7 +4,7 @@ title: Arduino
 nav_order: 4
 ---
 
-# Semana 2
+# Semana 2 y 3 
 
 **Arduino**
  
