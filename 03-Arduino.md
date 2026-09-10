@@ -142,7 +142,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 ## Circuito 0
 
-![Circuito 0 en Tinkercad]({{ '/assets/img/semana2/0-tinkercad.png' | relative_url }})
+![Circuito 0 en Tinkercad]({{ '/assets/img/03-arduino/0-0.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 0 realizado en Tinkercad junto con su código.</em></p>
 
@@ -158,7 +158,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 ## Circuito 1
 
-![Circuito 1 en Tinkercad]({{ '/assets/img/semana2/1-tinkercad.png' | relative_url }})
+![Circuito 1 en Tinkercad]({{ '/assets/img/03-arduino/1-1.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 1 realizado en Tinkercad junto con su código.</em></p>
 
