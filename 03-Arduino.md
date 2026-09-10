@@ -174,7 +174,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 ## Circuito 2
 
-![Circuito 2 en Tinkercad]({{ '/assets/img/semana2/2-tinkercad.png' | relative_url }})
+![Circuito 2 en Tinkercad]({{ '/assets/img/03-arduino/1-2.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 2 realizado en Tinkercad junto con su código.</em></p>
 
@@ -190,7 +190,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 ## Circuito 3
 
-![Circuito 3 en Tinkercad]({{ '/assets/img/semana2/3-tinkercad.png' | relative_url }})
+![Circuito 3 en Tinkercad]({{ '/assets/img/03-arduino/1-3.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 3 realizado en Tinkercad junto con su código.</em></p>
 
@@ -206,7 +206,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 ## Circuito 4
 
-![Circuito 4 en Tinkercad]({{ '/assets/img/semana2/4-tinkercad.png' | relative_url }})
+![Circuito 4 en Tinkercad]({{ '/assets/img/03-arduino/1-4.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 4 realizado en Tinkercad junto con su código.</em></p>
 
@@ -222,7 +222,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 ## Circuito 5
 
-![Circuito 5 en Tinkercad]({{ '/assets/img/semana2/5-tinkercad.png' | relative_url }})
+![Circuito 5 en Tinkercad]({{ '/assets/img/03-arduino/1-5.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 5 realizado en Tinkercad junto con su código.</em></p>
 
@@ -238,7 +238,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 ## Circuito 6
 
-![Circuito 6 en Tinkercad]({{ '/assets/img/semana2/6-tinkercad.png' | relative_url }})
+![Circuito 6 en Tinkercad]({{ '/assets/img/03-arduino/1-6.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 6 realizado en Tinkercad junto con su código.</em></p>
 
@@ -254,7 +254,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 ## Circuito 7
 
-![Circuito 7 en Tinkercad]({{ '/assets/img/semana2/7-tinkercad.png' | relative_url }})
+![Circuito 7 en Tinkercad]({{ '/assets/img/03-arduino/1-7.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 7 realizado en Tinkercad junto con su código.</em></p>
 
@@ -270,7 +270,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 ## Circuito 8
 
-![Circuito 8 en Tinkercad]({{ '/assets/img/semana2/8-tinkercad.png' | relative_url }})
+![Circuito 8 en Tinkercad]({{ '/assets/img/03-arduino/1-8.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 8 realizado en Tinkercad junto con su código.</em></p>
 
@@ -286,7 +286,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 ## Circuito 9
 
-![Circuito 9 en Tinkercad]({{ '/assets/img/semana2/9-tinkercad.png' | relative_url }})
+![Circuito 9 en Tinkercad]({{ '/assets/img/03-arduino/1-9.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 9 realizado en Tinkercad junto con su código.</em></p>
 
@@ -310,7 +310,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 ## Circuito 10
 
-![Circuito 10 en Tinkercad]({{ '/assets/img/semana2/10-tinkercad.png' | relative_url }})
+![Circuito 10 en Tinkercad]({{ '/assets/img/03-arduino/1-10.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 10 realizado en Tinkercad junto con su código.</em></p>
 
@@ -326,7 +326,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 ## Circuito 11
 
-![Circuito 11 en Tinkercad]({{ '/assets/img/semana2/11-tinkercad.png' | relative_url }})
+![Circuito 11 en Tinkercad]({{ '/assets/img/03-arduino/2-11.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 11 realizado en Tinkercad junto con su código.</em></p>
 
@@ -342,7 +342,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 ## Circuito 12
 
-![Circuito 12 en Tinkercad]({{ '/assets/img/semana2/12-tinkercad.png' | relative_url }})
+![Circuito 12 en Tinkercad]({{ '/assets/img/03-arduino/2-12.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 12 realizado en Tinkercad junto con su código.</em></p>
 
@@ -358,7 +358,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 ## Circuito 13
 
-![Circuito 13 en Tinkercad]({{ '/assets/img/semana2/13-tinkercad.png' | relative_url }})
+![Circuito 13 en Tinkercad]({{ '/assets/img/03-arduino/2-13.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 13 realizado en Tinkercad junto con su código.</em></p>
 
@@ -374,7 +374,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 ## Circuito 14
 
-![Circuito 14 en Tinkercad]({{ '/assets/img/semana2/14-tinkercad.png' | relative_url }})
+![Circuito 14 en Tinkercad]({{ '/assets/img/03-arduino/2-14.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 14 realizado en Tinkercad junto con su código.</em></p>
 
@@ -390,7 +390,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 ## Circuito 15
 
-![Circuito 15 en Tinkercad]({{ '/assets/img/semana2/15-tinkercad.png' | relative_url }})
+![Circuito 15 en Tinkercad]({{ '/assets/img/03-arduino/1-15.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 15 realizado en Tinkercad junto con su código.</em></p>
 
@@ -406,7 +406,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 ## Circuito 16
 
-![Circuito 16 en Tinkercad]({{ '/assets/img/semana2/16-tinkercad.png' | relative_url }})
+![Circuito 16 en Tinkercad]({{ '/assets/img/03-arduino/2-16.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 16 realizado en Tinkercad junto con su código.</em></p>
 
@@ -430,7 +430,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 
 ## Circuito 17
 
-![Circuito 17 en Tinkercad]({{ '/assets/img/semana2/17-tinkercad.png' | relative_url }})
+![Circuito 17 en Tinkercad]({{ '/assets/img/03-arduino/3-17.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 17 realizado en Tinkercad junto con su código.</em></p>
 
@@ -446,7 +446,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 
 ## Circuito 18
 
-![Circuito 18 en Tinkercad]({{ '/assets/img/semana2/18-tinkercad.png' | relative_url }})
+![Circuito 18 en Tinkercad]({{ '/assets/img/03-arduino/3-18.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 18 realizado en Tinkercad junto con su código.</em></p>
 
@@ -462,7 +462,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 
 ## Circuito 19
 
-![Circuito 19 en Tinkercad]({{ '/assets/img/semana2/19-tinkercad.png' | relative_url }})
+![Circuito 19 en Tinkercad]({{ '/assets/img/03-arduino/3-19.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 19 realizado en Tinkercad junto con su código.</em></p>
 
@@ -476,9 +476,25 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 
 ---
 
+## Circuito 19.2
+
+![Circuito 19.2 en Tinkercad]({{ '/assets/img/03-arduino/3-19.2.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 19.2 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 19.2 físico]({{ '/assets/img/semana2/19-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/19-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 19.2 .</em></p>
+
+---
+
 ## Circuito 20
 
-![Circuito 20 en Tinkercad]({{ '/assets/img/semana2/20-tinkercad.png' | relative_url }})
+![Circuito 20 en Tinkercad]({{ '/assets/img/03-arduino/3-20.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 20 realizado en Tinkercad junto con su código.</em></p>
 
@@ -494,7 +510,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 
 ## Circuito 21
 
-![Circuito 21 en Tinkercad]({{ '/assets/img/semana2/21-tinkercad.png' | relative_url }})
+![Circuito 21 en Tinkercad]({{ '/assets/img/03-arduino/3-21.png' | relative_url }})
 
 <p align="center"><em>Imagen del circuito 21 realizado en Tinkercad junto con su código.</em></p>
 
