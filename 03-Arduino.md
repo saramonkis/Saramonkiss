@@ -149,7 +149,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 ![Circuito 0 físico]({{ '/assets/img/03-arduino/foto0y1.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/0-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 0 y 1.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 0.</em></p>
@@ -165,7 +165,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 ![Circuito 1 físico]({{ '/assets/img/03-arduino/foto0y1.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/1-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 0 y 1.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 1.</em></p>
@@ -181,7 +181,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 ![Circuito 2 físico]({{ '/assets/img/03-arduino/foto 2y3.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/2-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 2 y 3.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 2.</em></p>
@@ -197,7 +197,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 ![Circuito 3 físico]({{ '/assets/img/03-arduino/foto 2y3.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/3-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 2 y 3.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 3.</em></p>
@@ -229,7 +229,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 ![Circuito 5 físico]({{ '/assets/img/03-arduino/foto 5.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/5-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 5.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 5.</em></p>
@@ -245,7 +245,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 ![Circuito 6 físico]({{ '/assets/img/03-arduino/foto 6.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/6-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 6.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 6.</em></p>
@@ -261,7 +261,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 ![Circuito 7 físico]({{ '/assets/img/03-arduino/foto 7.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/7-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 7.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 7.</em></p>
@@ -277,7 +277,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 ![Circuito 8 físico]({{ '/assets/img/03-arduino/foto 8.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/8-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 8.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 8.</em></p>
@@ -293,7 +293,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 ![Circuito 9 físico]({{ '/assets/img/03-arduino/foto 9.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/03-arduino/video9.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 9.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 9.</em></p>
@@ -317,7 +317,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 ![Circuito 10 físico]({{ '/assets/img/03-arduino/foto 10y12.png' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/10-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 10.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 10.</em></p>
@@ -333,7 +333,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 ![Circuito 11 físico]({{ '/assets/img/03-arduino/foto 11.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/11-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 11 y 13.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 11.</em></p>
@@ -349,7 +349,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 ![Circuito 12 físico]({{ '/assets/img/03-arduino/foto 10y12.png' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/12-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 12.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 12.</em></p>
@@ -365,7 +365,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 ![Circuito 13 físico]({{ '/assets/img/03-arduino/foto 13.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/13-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 11 y 13.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 13.</em></p>
@@ -381,7 +381,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 ![Circuito 14 físico]({{ '/assets/img/03-arduino/foto 14.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/14-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 14.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 14.</em></p>
@@ -397,7 +397,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 ![Circuito 15 físico]({{ '/assets/img/03-arduino/foto 15.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/15-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 15.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 15.</em></p>
@@ -413,7 +413,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 ![Circuito 16 físico]({{ '/assets/img/03-arduino/foto 16.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/16-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 16.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 16.</em></p>
@@ -437,7 +437,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 ![Circuito 17 físico]({{ '/assets/img/03-arduino/foto 17y18.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/17-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 17.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 17.</em></p>
@@ -453,7 +453,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 ![Circuito 18 físico]({{ '/assets/img/03-arduino/foto 17y18.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/18-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 18.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 18.</em></p>
@@ -469,7 +469,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 ![Circuito 19 físico]({{ '/assets/img/03-arduino/foto 19.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/19-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 19 (2).mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 19.</em></p>
@@ -485,7 +485,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 ![Circuito 19.2 físico]({{ '/assets/img/03-arduino/foto 19.2.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/19-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/19.2.2.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 19.2 .</em></p>
@@ -501,7 +501,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 ![Circuito 20 físico]({{ '/assets/img/03-arduino/foto 20.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/20-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 20.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 20.</em></p>
@@ -517,7 +517,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 ![Circuito 21 físico]({{ '/assets/img/03-arduino/foto 21.jpgg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/21-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 21.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 21.</em></p>
@@ -525,7 +525,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 ----
 ## Conclusión 
 
-# Conclusión
+
 
 Durante esta actividad aprendí por primera vez en mi vida a utilizar Arduino y Arduino IDE para crear distintos circuitos, viendo mediante diferentes circuitos como cambiaban respecto al codigo que se le ponia, Primero trabajé con salidas digitales para controlar LEDs y un display de 7 segmentos; después utilicé entradas digitales, como botones, y finalmente aprendí a controlar servomotores y su posición.
 
