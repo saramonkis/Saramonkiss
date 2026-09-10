@@ -146,7 +146,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 <p align="center"><em>Imagen del circuito 0 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 0 físico]({{ '/assets/img/semana2/0-fisico.jpg' | relative_url }})
+![Circuito 0 físico]({{ '/assets/img/03-arduino/foto0y1.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/0-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -162,7 +162,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 <p align="center"><em>Imagen del circuito 1 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 1 físico]({{ '/assets/img/semana2/1-fisico.jpg' | relative_url }})
+![Circuito 1 físico]({{ '/assets/img/03-arduino/foto0y1.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/1-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -178,7 +178,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 <p align="center"><em>Imagen del circuito 2 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 2 físico]({{ '/assets/img/semana2/2-fisico.jpg' | relative_url }})
+![Circuito 2 físico]({{ '/assets/img/03-arduino/foto 2y3.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/2-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -194,7 +194,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 <p align="center"><em>Imagen del circuito 3 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 3 físico]({{ '/assets/img/semana2/3-fisico.jpg' | relative_url }})
+![Circuito 3 físico]({{ '/assets/img/03-arduino/foto 2y3.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/3-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -210,7 +210,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 <p align="center"><em>Imagen del circuito 4 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 4 físico]({{ '/assets/img/semana2/4-fisico.jpg' | relative_url }})
+![Circuito 4 físico]({{ '/assets/img/03-arduino/foto 4.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/4-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -226,7 +226,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 <p align="center"><em>Imagen del circuito 5 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 5 físico]({{ '/assets/img/semana2/5-fisico.jpg' | relative_url }})
+![Circuito 5 físico]({{ '/assets/img/03-arduino/foto 5.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/5-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -242,7 +242,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 <p align="center"><em>Imagen del circuito 6 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 6 físico]({{ '/assets/img/semana2/6-fisico.jpg' | relative_url }})
+![Circuito 6 físico]({{ '/assets/img/03-arduino/foto 6.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/6-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -258,7 +258,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 <p align="center"><em>Imagen del circuito 7 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 7 físico]({{ '/assets/img/semana2/7-fisico.jpg' | relative_url }})
+![Circuito 7 físico]({{ '/assets/img/03-arduino/foto 7.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/7-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -274,7 +274,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 <p align="center"><em>Imagen del circuito 8 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 8 físico]({{ '/assets/img/semana2/8-fisico.jpg' | relative_url }})
+![Circuito 8 físico]({{ '/assets/img/03-arduino/foto 8.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/8-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -290,7 +290,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 
 <p align="center"><em>Imagen del circuito 9 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 9 físico]({{ '/assets/img/semana2/9-fisico.jpg' | relative_url }})
+![Circuito 9 físico]({{ '/assets/img/03-arduino/foto 9.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/9-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -314,7 +314,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 <p align="center"><em>Imagen del circuito 10 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 10 físico]({{ '/assets/img/semana2/10-fisico.jpg' | relative_url }})
+![Circuito 10 físico]({{ '/assets/img/03-arduino/foto 10y12.png' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/10-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -330,7 +330,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 <p align="center"><em>Imagen del circuito 11 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 11 físico]({{ '/assets/img/semana2/11-fisico.jpg' | relative_url }})
+![Circuito 11 físico]({{ '/assets/img/03-arduino/foto 11.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/11-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -346,7 +346,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 <p align="center"><em>Imagen del circuito 12 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 12 físico]({{ '/assets/img/semana2/12-fisico.jpg' | relative_url }})
+![Circuito 12 físico]({{ '/assets/img/03-arduino/foto 10y12.png' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/12-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -362,7 +362,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 <p align="center"><em>Imagen del circuito 13 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 13 físico]({{ '/assets/img/semana2/13-fisico.jpg' | relative_url }})
+![Circuito 13 físico]({{ '/assets/img/03-arduino/foto 13.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/13-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -378,7 +378,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 <p align="center"><em>Imagen del circuito 14 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 14 físico]({{ '/assets/img/semana2/14-fisico.jpg' | relative_url }})
+![Circuito 14 físico]({{ '/assets/img/03-arduino/foto 14.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/14-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -394,7 +394,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 <p align="center"><em>Imagen del circuito 15 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 15 físico]({{ '/assets/img/semana2/15-fisico.jpg' | relative_url }})
+![Circuito 15 físico]({{ '/assets/img/03-arduino/foto 15.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/15-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -410,7 +410,7 @@ En esta sección se utilizaron las entradas digitales del Arduino. Estas entrada
 
 <p align="center"><em>Imagen del circuito 16 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 16 físico]({{ '/assets/img/semana2/16-fisico.jpg' | relative_url }})
+![Circuito 16 físico]({{ '/assets/img/03-arduino/foto 16.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/16-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -434,7 +434,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 
 <p align="center"><em>Imagen del circuito 17 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 17 físico]({{ '/assets/img/semana2/17-fisico.jpg' | relative_url }})
+![Circuito 17 físico]({{ '/assets/img/03-arduino/foto 17y18.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/17-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -450,7 +450,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 
 <p align="center"><em>Imagen del circuito 18 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 18 físico]({{ '/assets/img/semana2/18-fisico.jpg' | relative_url }})
+![Circuito 18 físico]({{ '/assets/img/03-arduino/foto 17y18.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/18-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -466,7 +466,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 
 <p align="center"><em>Imagen del circuito 19 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 19 físico]({{ '/assets/img/semana2/19-fisico.jpg' | relative_url }})
+![Circuito 19 físico]({{ '/assets/img/03-arduino/foto 19.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/19-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -482,7 +482,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 
 <p align="center"><em>Imagen del circuito 19.2 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 19.2 físico]({{ '/assets/img/semana2/19-fisico.jpg' | relative_url }})
+![Circuito 19.2 físico]({{ '/assets/img/03-arduino/foto 19.2.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/19-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -498,7 +498,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 
 <p align="center"><em>Imagen del circuito 20 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 20 físico]({{ '/assets/img/semana2/20-fisico.jpg' | relative_url }})
+![Circuito 20 físico]({{ '/assets/img/03-arduino/foto 20.jpg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/20-fisico.mp4' | relative_url }}" type="video/mp4">
@@ -514,7 +514,7 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 
 <p align="center"><em>Imagen del circuito 21 realizado en Tinkercad junto con su código.</em></p>
 
-![Circuito 21 físico]({{ '/assets/img/semana2/21-fisico.jpg' | relative_url }})
+![Circuito 21 físico]({{ '/assets/img/03-arduino/foto 21.jpgg' | relative_url }})
 
 <video width="700" controls>
   <source src="{{ '/assets/videos/semana2/21-fisico.mp4' | relative_url }}" type="video/mp4">
