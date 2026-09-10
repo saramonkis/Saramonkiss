@@ -133,3 +133,375 @@ El display de 7 segmentos está formado por siete secciones luminosas identifica
 ----
 
 ## 1_Arduino Básico Salidas Digitales
+
+# Descripción
+
+En esta primera sección se trabajó con las salidas digitales del Arduino. Estas salidas permiten enviar señales de encendido y apagado para controlar componentes como LEDs y el display de 7 segmentos. Los circuitos de este apartado van del número 0 al 9.
+
+---
+
+## Circuito 0
+
+![Circuito 0 en Tinkercad]({{ '/assets/img/semana2/0-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 0 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 0 físico]({{ '/assets/img/semana2/0-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/0-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 0.</em></p>
+
+---
+
+## Circuito 1
+
+![Circuito 1 en Tinkercad]({{ '/assets/img/semana2/1-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 1 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 1 físico]({{ '/assets/img/semana2/1-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/1-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 1.</em></p>
+
+---
+
+## Circuito 2
+
+![Circuito 2 en Tinkercad]({{ '/assets/img/semana2/2-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 2 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 2 físico]({{ '/assets/img/semana2/2-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/2-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 2.</em></p>
+
+---
+
+## Circuito 3
+
+![Circuito 3 en Tinkercad]({{ '/assets/img/semana2/3-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 3 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 3 físico]({{ '/assets/img/semana2/3-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/3-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 3.</em></p>
+
+---
+
+## Circuito 4
+
+![Circuito 4 en Tinkercad]({{ '/assets/img/semana2/4-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 4 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 4 físico]({{ '/assets/img/semana2/4-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/4-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 4.</em></p>
+
+---
+
+## Circuito 5
+
+![Circuito 5 en Tinkercad]({{ '/assets/img/semana2/5-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 5 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 5 físico]({{ '/assets/img/semana2/5-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/5-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 5.</em></p>
+
+---
+
+## Circuito 6
+
+![Circuito 6 en Tinkercad]({{ '/assets/img/semana2/6-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 6 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 6 físico]({{ '/assets/img/semana2/6-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/6-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 6.</em></p>
+
+---
+
+## Circuito 7
+
+![Circuito 7 en Tinkercad]({{ '/assets/img/semana2/7-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 7 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 7 físico]({{ '/assets/img/semana2/7-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/7-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 7.</em></p>
+
+---
+
+## Circuito 8
+
+![Circuito 8 en Tinkercad]({{ '/assets/img/semana2/8-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 8 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 8 físico]({{ '/assets/img/semana2/8-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/8-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 8.</em></p>
+
+---
+
+## Circuito 9
+
+![Circuito 9 en Tinkercad]({{ '/assets/img/semana2/9-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 9 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 9 físico]({{ '/assets/img/semana2/9-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/9-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 9.</em></p>
+
+---
+
+## 2_Arduino Básico: Entradas Digitales
+
+# Descripción
+
+En esta sección se utilizaron las entradas digitales del Arduino. Estas entradas reciben información de componentes como los botones pulsadores. Dependiendo de la señal recibida, Arduino puede encender o apagar diferentes LEDs. Los circuitos de este apartado van del número 10 al 16.
+
+---
+
+## Circuito 10
+
+![Circuito 10 en Tinkercad]({{ '/assets/img/semana2/10-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 10 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 10 físico]({{ '/assets/img/semana2/10-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/10-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 10.</em></p>
+
+---
+
+## Circuito 11
+
+![Circuito 11 en Tinkercad]({{ '/assets/img/semana2/11-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 11 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 11 físico]({{ '/assets/img/semana2/11-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/11-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 11.</em></p>
+
+---
+
+## Circuito 12
+
+![Circuito 12 en Tinkercad]({{ '/assets/img/semana2/12-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 12 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 12 físico]({{ '/assets/img/semana2/12-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/12-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 12.</em></p>
+
+---
+
+## Circuito 13
+
+![Circuito 13 en Tinkercad]({{ '/assets/img/semana2/13-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 13 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 13 físico]({{ '/assets/img/semana2/13-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/13-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 13.</em></p>
+
+---
+
+## Circuito 14
+
+![Circuito 14 en Tinkercad]({{ '/assets/img/semana2/14-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 14 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 14 físico]({{ '/assets/img/semana2/14-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/14-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 14.</em></p>
+
+---
+
+## Circuito 15
+
+![Circuito 15 en Tinkercad]({{ '/assets/img/semana2/15-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 15 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 15 físico]({{ '/assets/img/semana2/15-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/15-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 15.</em></p>
+
+---
+
+## Circuito 16
+
+![Circuito 16 en Tinkercad]({{ '/assets/img/semana2/16-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 16 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 16 físico]({{ '/assets/img/semana2/16-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/16-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 16.</em></p>
+
+---
+
+## 3_Arduino Básico: Servomotores
+
+# Descripción
+
+En esta sección se trabajó con servomotores. Estos motores permiten controlar su posición mediante ángulos específicos. También se utilizó un potenciómetro para cambiar la posición del servomotor de manera manual. Los circuitos de este apartado van del número 17 al 21.
+
+---
+
+## Circuito 17
+
+![Circuito 17 en Tinkercad]({{ '/assets/img/semana2/17-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 17 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 17 físico]({{ '/assets/img/semana2/17-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/17-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 17.</em></p>
+
+---
+
+## Circuito 18
+
+![Circuito 18 en Tinkercad]({{ '/assets/img/semana2/18-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 18 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 18 físico]({{ '/assets/img/semana2/18-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/18-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 18.</em></p>
+
+---
+
+## Circuito 19
+
+![Circuito 19 en Tinkercad]({{ '/assets/img/semana2/19-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 19 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 19 físico]({{ '/assets/img/semana2/19-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/19-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 19.</em></p>
+
+---
+
+## Circuito 20
+
+![Circuito 20 en Tinkercad]({{ '/assets/img/semana2/20-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 20 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 20 físico]({{ '/assets/img/semana2/20-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/20-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 20.</em></p>
+
+---
+
+## Circuito 21
+
+![Circuito 21 en Tinkercad]({{ '/assets/img/semana2/21-tinkercad.png' | relative_url }})
+
+<p align="center"><em>Imagen del circuito 21 realizado en Tinkercad junto con su código.</em></p>
+
+![Circuito 21 físico]({{ '/assets/img/semana2/21-fisico.jpg' | relative_url }})
+
+<video width="700" controls>
+  <source src="{{ '/assets/videos/semana2/21-fisico.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+<p align="center"><em>Imagen y video de la elaboración física del circuito 21.</em></p>
