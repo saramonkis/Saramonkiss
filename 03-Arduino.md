@@ -78,7 +78,7 @@ Este cable conecta el Arduino Uno con la computadora. Sirve para alimentar la pl
 
 Los cables jumper permiten unir los pines del Arduino con los componentes colocados en la protoboard. Se utilizaron cables de diferentes colores para distinguir las conexiones.
 
-![Cables jumper](assets/img/semana2/cables-jumper.jpg)
+![Cables jumper](assets/img/03-arduino/jumpers.jpg)
 
 <p align="center"><em>Figura 4. Cables jumper utilizados en las conexiones.</em></p>
 
@@ -86,7 +86,7 @@ Los cables jumper permiten unir los pines del Arduino con los componentes coloca
 
 Los LEDs son diodos que producen luz cuando la corriente circula en la dirección correcta. La pata larga es el positivo o ánodo y la corta es el negativo o cátodo.
 
-![LEDs](assets/img/semana2/leds.jpg)
+![LEDs](assets/img/03-arduino/leds.jpg)
 
 <p align="center"><em>Figura 5. LEDs utilizados como indicadores visuales.</em></p>
 
@@ -94,7 +94,7 @@ Los LEDs son diodos que producen luz cuando la corriente circula en la direcció
 
 Las resistencias limitan el paso de corriente eléctrica. Las de 220 Ω o 330 Ω protegen los LEDs, mientras que las de 10 kΩ ayudan a mantener estable la lectura de los botones.
 
-![Resistencias](assets/img/semana2/resistencias.jpg)
+![Resistencias](assets/img/03-arduino/resisitencias.jpg)
 
 <p align="center"><em>Figura 6. Resistencias utilizadas en los circuitos.</em></p>
 
@@ -102,7 +102,7 @@ Las resistencias limitan el paso de corriente eléctrica. Las de 220 Ω o 330 Ω
 
 Los botones pulsadores funcionan como interruptores momentáneos. Cuando se presionan cierran el circuito y envían una señal al Arduino; al soltarlos regresan a su estado original.
 
-![Botones](assets/img/semana2/botones.jpg)
+![Botones](assets/img/03-arduino/pulsador.jpg)
 
 <p align="center"><em>Figura 7. Botones pulsadores utilizados como entradas.</em></p>
 
@@ -110,7 +110,7 @@ Los botones pulsadores funcionan como interruptores momentáneos. Cuando se pres
 
 El potenciómetro es una resistencia variable de tres terminales. Al girar su perilla cambia el voltaje de salida, permitiendo controlar valores como la posición del servomotor.
 
-![Potenciómetro](assets/img/semana2/potenciometro.jpg)
+![Potenciómetro](assets/img/03-arduino/Potentiometer.jpg)
 
 <p align="center"><em>Figura 8. Potenciómetro utilizado para controlar el servomotor.</em></p>
 
@@ -118,7 +118,7 @@ El potenciómetro es una resistencia variable de tres terminales. Al girar su pe
 
 El microservomotor SG90 es un motor pequeño que puede colocarse en diferentes ángulos. Cuenta con tres conexiones: alimentación, tierra y señal de control.
 
-![Microservomotor SG90](assets/img/semana2/servomotor-sg90.jpg)
+![Microservomotor SG90](assets/img/03-arduino/servo.jpg)
 
 <p align="center"><em>Figura 9. Microservomotor utilizado en uno de los circuitos.</em></p>
 
@@ -126,7 +126,7 @@ El microservomotor SG90 es un motor pequeño que puede colocarse en diferentes �
 
 El display de 7 segmentos está formado por siete secciones luminosas identificadas con las letras de la **A** a la **G**. Arduino enciende diferentes combinaciones de segmentos para representar los números del 0 al 9. Algunos modelos también incluyen un punto decimal.
 
-![Display de 7 segmentos](assets/img/semana2/display-7-segmentos.jpg)
+![Display de 7 segmentos](assets/img/03-arduino/display.jpg)
 
 <p align="center"><em>Figura 10. Display digital de 7 segmentos.</em></p>
 
