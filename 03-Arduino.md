@@ -62,7 +62,7 @@ El Arduino Uno es la placa principal de los circuitos. Recibe las señales de en
 
 La protoboard es una placa de pruebas que permite conectar componentes electrónicos sin soldarlos. Sus orificios internos están unidos en grupos para facilitar las conexiones.
 
-![Protoboard](assets/img/semana2/protoboard.jpg)
+![Protoboard](assets/img/03-arduino/protoboard.jpg)
 
 <p align="center"><em>Figura 2. Protoboard utilizada para montar los circuitos.</em></p>
 
