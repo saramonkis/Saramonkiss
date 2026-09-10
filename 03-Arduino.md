@@ -70,7 +70,7 @@ La protoboard es una placa de pruebas que permite conectar componentes electrón
 
 Este cable conecta el Arduino Uno con la computadora. Sirve para alimentar la placa y cargar los programas realizados en Arduino IDE.
 
-![Cable USB](assets/img/semana2/cable-usb.jpg)
+![Cable USB](assets/img/03-arduino/cableusb.jpg)
 
 <p align="center"><em>Figura 3. Cable USB utilizado para conectar el Arduino.</em></p>
 
