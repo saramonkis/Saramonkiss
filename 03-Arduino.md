@@ -521,3 +521,12 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 21.</em></p>
+
+----
+## Conclusión 
+
+# Conclusión
+
+Durante esta actividad aprendí por primera vez en mi vida a utilizar Arduino y Arduino IDE para crear distintos circuitos, viendo mediante diferentes circuitos como cambiaban respecto al codigo que se le ponia, Primero trabajé con salidas digitales para controlar LEDs y un display de 7 segmentos; después utilicé entradas digitales, como botones, y finalmente aprendí a controlar servomotores y su posición.
+
+Realizar primero los circuitos en Tinkercad me ayudó a entender las conexiones y encontrar errores antes de armarlos físicamente que fue un verdadero reto. Con esta práctica comprendí mejor cómo se relacionan el código, las conexiones y los componentes electrónicos para lograr que un proyecto funcione correctamente.
