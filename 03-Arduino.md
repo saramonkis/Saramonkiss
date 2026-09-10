@@ -213,7 +213,7 @@ En esta primera sección se trabajó con las salidas digitales del Arduino. Esta
 ![Circuito 4 físico]({{ '/assets/img/03-arduino/foto 4.jpg' | relative_url }})
 
 <video width="700" controls>
-  <source src="{{ '/assets/videos/semana2/4-fisico.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/videos/03-arduino/video 4.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 <p align="center"><em>Imagen y video de la elaboración física del circuito 4.</em></p>
@@ -525,8 +525,8 @@ En esta sección se trabajó con servomotores. Estos motores permiten controlar 
 ----
 ## Conclusión 
 
+Durante esta actividad aprendí por primera vez a utilizar Arduino y Arduino IDE para crear diferentes circuitos. Al principio todo se veía un poco complicado por la cantidad de cables, conexiones y líneas de código, pero conforme fui haciendo los ejercicios pude entender mejor para qué servía cada componente y cómo cambiaba el funcionamiento del circuito dependiendo del código que se colocaba.
 
+Primero trabajé con salidas digitales para controlar LEDs y un display de 7 segmentos. Después utilicé entradas digitales, como los botones, para hacer que el Arduino respondiera cuando los presionaba. Finalmente, aprendí a controlar servomotores y a cambiar su posición, lo cual fue de las partes que más me llamó la atención porque pude ver de una manera más clara cómo el código puede producir un movimiento físico.
 
-Durante esta actividad aprendí por primera vez en mi vida a utilizar Arduino y Arduino IDE para crear distintos circuitos, viendo mediante diferentes circuitos como cambiaban respecto al codigo que se le ponia, Primero trabajé con salidas digitales para controlar LEDs y un display de 7 segmentos; después utilicé entradas digitales, como botones, y finalmente aprendí a controlar servomotores y su posición.
-
-Realizar primero los circuitos en Tinkercad me ayudó a entender las conexiones y encontrar errores antes de armarlos físicamente que fue un verdadero reto. Con esta práctica comprendí mejor cómo se relacionan el código, las conexiones y los componentes electrónicos para lograr que un proyecto funcione correctamente.
+Hacer primero los circuitos en Tinkercad me ayudó bastante a entender las conexiones y a encontrar algunos errores antes de armarlos físicamente. Aun así, pasar todo a la protoboard real fue un verdadero reto, ya que cualquier cable mal conectado podía hacer que el circuito no funcionara. Aunque en algunos momentos fue un poco frustrante, también fue satisfactorio ver que los circuitos finalmente funcionaban. Con esta práctica comprendí mejor la relación que existe entre el código, las conexiones y los componentes electrónicos, además de que adquirí una idea más clara de todo lo que se puede crear utilizando Arduino.
