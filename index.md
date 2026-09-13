@@ -15,7 +15,7 @@ Contenido:
 - [1. Acerca de mi][01]
 - [2. Semana 1: Portafolio web][02]
 - [3. Arduino][03]
-- [4. Elaboracion de cubo][04-Elaboracion-cubo]
+- [4. Elaboracion de cubo][04]
 
 
 [03]: 03-Arduino.md
