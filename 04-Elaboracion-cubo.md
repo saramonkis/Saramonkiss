@@ -10,6 +10,18 @@ En esta práctica se utilizó el programa de SOLIDWORKS para realizar el modelad
 
 Primero se realizaron en SOLIDWORKS los diseños de cada una de las caras que formarían el cubo, considerando sus medidas y la manera en la que las piezas se unirían entre sí. Una vez terminado el diseño, fue necesario preparar el archivo para poder utilizarlo en el equipo de corte. Para esto, el diseño se exportó en formato DXF, ya que este formato permite conservar las líneas y dimensiones necesarias para realizar el corte.
 
+![Tapa Cubo](assets/img/04-cubo/tapa.png)
+
+<p align="center"><em>Figura 1. Modelado de las Tapas (se cortaon 2 iguales).</em></p>
+
+
+![Lados Cubo](assets/img/04-cubo/lados.png)
+
+<p align="center"><em>Figura 2. Modelado de los Lados (se cortaon 4 iguales).</em></p>
+
+
+
+
 Después, el archivo DXF se convirtió a PDF utilizando el convertidor , para tener un archivo compatible con el programa utilizado para mandar el diseño a la cortadora láser. Antes de realizar el corte se revisó que las medidas, las líneas y la escala fueran correctas para evitar errores al momento de fabricar las piezas.
 
 Finalmente, el archivo se mandó al equipo de corte láser, donde se configuraron los parámetros necesarios dependiendo del material utilizado. La máquina realizó el corte de cada una de las piezas sobre la madera MDF siguiendo el diseño realizado previamente en SOLIDWORKS. Después de obtener todas las piezas, estas se ensamblaron para formar el cubo.
