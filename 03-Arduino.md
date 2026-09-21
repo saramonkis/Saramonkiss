@@ -3,7 +3,7 @@ layout: default
 title: Arduino
 nav_order: 4
 ---
-## Semana Arduino
+# Arduino
 # Semana 2 y 3 
 
 **Arduino**
