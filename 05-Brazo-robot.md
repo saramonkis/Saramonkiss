@@ -6,32 +6,18 @@ nav_order: 6
 # Brazo Robot
 ## Semana 5 y 6 
 
-En este proyecto se realizó un **brazo robótico de 3 grados de libertad con una pinza**, utilizando servomotores, Arduino y potenciómetros para controlar cada uno de sus movimientos.
-El objetivo  del proyecto fue diseñar, construir y programar un brazo robótico capaz de moverse mediante potenciómetros y utilizar una pinza para tomar una pelota de aproximadamente de **6cm de diámetro
-La estructura del brazo se realizó utilizando **MDF de 3 mm**, cortado con una cortadora láser. También se realizaron las conexiones electrónicas necesarias para controlar los servomotores mediante un Arduino.
+En este proyecto se realizó un brazo robótico de 3 grados de libertad con una pinza, utilizando servomotores, Arduino y potenciómetros para controlar cada uno de sus movimientos.
+El objetivo  del proyecto fue diseñar, construir y programar un brazo robótico capaz de moverse mediante potenciómetros y utilizar una pinza para tomar una pelota de aproximadamente de **6cm de diámetro**
+La estructura del brazo se realizó utilizando **MDF de 3 mm**, cortado en la cortadora láser. También se realizaron las conexiones electrónicas necesarias para controlar los servomotores mediante un Arduino.
 
 ---
 
-# Requerimientos del proyecto
-
-El brazo debía cumplir con las siguientes características:
-
-- Tener **3 grados de libertad y una pinza**.
-- Utilizar mínimo **4 servomotores** y máximo 6.
-- Los servomotores permitidos eran **SG90 o MG995**.
-- Los servomotores debían ser controlados mediante **Arduino y potenciómetros**.
-- La estructura debía realizarse mediante **corte láser en MDF de 3 mm**.
-- El brazo debía medir menos de **30 cm**, buscando que estuviera aproximadamente entre los 20 y 25 cm.
-- La pinza debía ser capaz de tomar una pelota de **6 cm de diámetro**.
-- Se debía documentar el proceso de diseño, corte, ensamble, programación y pruebas.
-
----
 
 # Materiales
 
 Los materiales utilizados para la realización del brazo robótico fueron:
 
-| Material | Cantidad aproximada | Uso |
+| Material | Cantidad  | Uso |
 |---|---:|---|
 | Arduino | 1 | Controlar los servomotores y recibir la señal de los potenciómetros |
 | Servomotores SG90 | 4 | Realizar los movimientos del brazo y de la pinza |
