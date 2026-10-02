@@ -121,7 +121,10 @@ Después se llevó el archivo a la cortadora láser para realizar el corte de ca
 > **Espacio para video del corte láser**
 
 **Video del corte:**  
-[Ver video](assets/videos/03-arduino/04-brazorobot/cortadoralaser.mp4)
+<video width="700" controls>
+  <source src="{{ 'assets/videos/03-arduino/04-brazorobot/cortadoralaser.mp4' | relative_url }}" type="video/mp4">
+</video>
+
 
 ---
 
