@@ -58,22 +58,23 @@ Debido a que el diseño realizado inicialmente en SOLIDWORKS no funcionó como s
 
 La plantilla utilizada fue la siguiente:
 
-**Plantilla del brazo:**  
-[Ver plantilla aquí](PEGAR_AQUI_LINK_DE_LA_PLANTILLA)
 
-La plantilla sirvió como referencia para poder juntar correctamente todas las piezas y facilitar el ensamble del brazo.
+![Plantilla 1](assets/img/05-brazorobot/Plantilla1.png)
+
+<p align="center"><em>Figura 1. Plantillas de las piezas (parte 1) .</em></p>
+
+
+![Plantilla 2](assets/img/05-brazorobot/Plantilla2.png)
+
+<p align="center"><em>Figura 2. Plantillas de las piezas (parte 2) .</em></p>
+
+**Instrucciones del armado :**  
+[Ver Instrucciones](https://es.slideshare.net/slideshow/instrucciones-armarbrazorobotico/147417473#google_vignette)
+
+La plantilla y las instrucciones sirvieron para poder juntar correctamente todas las piezas y facilitar el ensamble del brazo.
 
 Antes de mandar las piezas a corte láser, el diseño se ajustó para trabajar con **MDF de 3 mm de grosor**, ya que este era el material disponible para realizar la estructura.
 
-También se revisaron las dimensiones de las piezas para mantener el tamaño completo del brazo dentro de las medidas solicitadas para el proyecto.
-
-> **Espacio para captura de la plantilla original**
-
-<!-- Agregar aquí captura de la plantilla -->
-
-> **Espacio para fotografía o captura de la plantilla preparada para MDF de 3 mm**
-
-<!-- Agregar aquí imagen de la plantilla modificada -->
 
 ---
 
