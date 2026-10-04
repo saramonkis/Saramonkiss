@@ -66,9 +66,6 @@ La plantilla utilizada fue la siguiente:
 
 <p align="center"><em>Figura 2. Plantillas de las piezas (parte 2) .</em></p>
 
-**Instrucciones del armado :**  
-[Ver Instrucciones](https://es.slideshare.net/slideshow/instrucciones-armarbrazorobotico/147417473#google_vignette)
-
 
 Antes de mandar las piezas a corte láser, el diseño se ajustó para trabajar con **MDF de 3 mm de grosor**, ya que este era el material disponible para realizar la estructura.
 
@@ -122,6 +119,7 @@ Las conexiones utilizadas fueron:
 | Pinza | Pin digital 9 | A3 |
 
 El Arduino fue conectado mediante un **cable USB A-B**, utilizado tanto para cargar el programa como para realizar las primeras pruebas del circuito.
+
 Primero se realizó un modelo en Tinkercad para simular el circuito con el código para posteriormente realizar las conexiones en físico.
 
 ![Circuito](assets/img/05-brazorobot/picArduino.png)
@@ -148,16 +146,16 @@ El código utilizado fue el siguiente:
 
 ---
 # Videos del funcionamiento del brazo robótico
-**Video del brazo robótico funcionando **  
 
-**Video del corte:**  
+
+**Video del  brazo robótico funcionando:**  
 <video width="700" controls>
   <source src="{{ 'assets/videos/03-arduino/04-brazorobot/videoRobotSolo.mp4' | relative_url }}" type="video/mp4">
 </video>
 
-**Video del brazo robótico pasandole la pelota a otro brazo **  
+**Video del **  
 
-**Video del corte:**  
+**Video del  brazo robótico pasandole la pelota a otro brazo:**  
 <video width="700" controls>
   <source src="{{ 'assets/videos/03-arduino/04-brazorobot/videoRobot2.mp4' | relative_url }}" type="video/mp4">
 </video>
