@@ -28,10 +28,10 @@ Los materiales utilizados para la realización del brazo robótico fueron:
 | MDF de 3 mm | Según diseño | Fabricar la estructura del brazo |
 | Tornillos y tuercas | Varios | Unir algunas partes de la estructura |
 
-> **Espacio para fotografía de los materiales**
 
-<!-- Agregar aquí fotografía de los materiales -->
+![Materiales](assets/img/05-brazorobot/PicMateriales.png)
 
+<p align="center"><em>Materiales utilizados </em></p>
 ---
 
 # Diseño del brazo
@@ -41,14 +41,12 @@ Los materiales utilizados para la realización del brazo robótico fueron:
 Inicialmente se intentó realizar desde cero el diseño completo del brazo utilizando **SOLIDWORKS**.
 
 La idea era diseñar cada una de las piezas de la estructura tomando en cuenta las medidas de los servomotores, los puntos de unión y el tamaño máximo permitido para el brazo.
-
 Sin embargo, durante este proceso se presentaron varios problemas para conseguir que todas las piezas coincidieran correctamente entre sí y que el ensamble completo funcionara como se esperaba.
 
-Por esta razón, se decidió buscar una plantilla que ya tuviera un diseño funcional de un brazo robótico y posteriormente modificarla para adaptarla a los materiales disponibles.
+![Solidworks](assets/img/05-brazorobot/solidwoks.png)
 
-> **Espacio para fotografía del intento realizado en SOLIDWORKS**
+<p align="center"><em>Diseños de Solidworks.</em></p>
 
-<!-- Agregar aquí imagen del diseño realizado en SOLIDWORKS -->
 
 ---
 
@@ -106,20 +104,8 @@ En esta sección se muestran las diferentes piezas utilizadas para construir el 
 # Preparación para corte láser
 
 Una vez que se tuvo el diseño final, las piezas se acomodaron para aprovechar de mejor manera el espacio disponible en la placa de MDF.
-
 Se verificó que el archivo tuviera las dimensiones correctas y que estuviera preparado para trabajar con un material de **3 mm de grosor**.
-
 Después se llevó el archivo a la cortadora láser para realizar el corte de cada una de las piezas.
-
-> **Espacio para fotografía del archivo preparado para corte**
-
-<!-- Agregar aquí imagen del archivo antes de cortar -->
-
-> **Espacio para fotografía de la cortadora láser**
-
-<!-- Agregar aquí fotografía durante el proceso de corte -->
-
-> **Espacio para video del corte láser**
 
 **Video del corte:**  
 <video width="700" controls>
@@ -128,19 +114,6 @@ Después se llevó el archivo a la cortadora láser para realizar el corte de ca
 
 
 ---
-
-# Piezas después del corte
-
-Una vez terminado el corte láser, se retiraron cuidadosamente todas las piezas de MDF.
-
-Antes de comenzar el ensamble se revisó que las piezas estuvieran completas, que los cortes fueran correctos y que los servomotores pudieran colocarse en los espacios correspondientes.
-
-> **Espacio para fotografía de las piezas recién cortadas**
-
-<!-- Agregar aquí fotografía -->
-
----
-
 # Ensamble del brazo
 
 Después de tener todas las piezas se comenzó con el ensamble del brazo robótico.
