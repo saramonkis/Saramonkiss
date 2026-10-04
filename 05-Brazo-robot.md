@@ -69,39 +69,13 @@ La plantilla utilizada fue la siguiente:
 **Instrucciones del armado :**  
 [Ver Instrucciones](https://es.slideshare.net/slideshow/instrucciones-armarbrazorobotico/147417473#google_vignette)
 
-La plantilla y las instrucciones sirvieron para poder juntar correctamente todas las piezas y facilitar el ensamble del brazo.
 
 Antes de mandar las piezas a corte láser, el diseño se ajustó para trabajar con **MDF de 3 mm de grosor**, ya que este era el material disponible para realizar la estructura.
 
 
 ---
 
-# Piezas del brazo
-
-Las piezas fueron organizadas antes de realizar el corte para poder identificar posteriormente dónde iba colocada cada una.
-
-En esta sección se muestran las diferentes piezas utilizadas para construir el brazo.
-
-| Pieza | Descripción | Cantidad |
-|---|---|---:|
-| Pieza 1 | Base principal del brazo | 1 |
-| Pieza 2 | Soporte de la base |  |
-| Pieza 3 | Brazo inferior |  |
-| Pieza 4 | Brazo superior |  |
-| Pieza 5 | Soporte para servomotor |  |
-| Pieza 6 | Soporte de la pinza |  |
-| Pieza 7 | Pinza |  |
-| Pieza 8 | Piezas de unión |  |
-
-> **Nota:** La tabla se puede completar posteriormente con la cantidad y descripción exacta de cada pieza utilizada.
-
-> **Espacio para imagen con todas las piezas**
-
-<!-- Agregar aquí fotografía de todas las piezas -->
-
----
-
-# Preparación para corte láser
+# Corte láser
 
 Una vez que se tuvo el diseño final, las piezas se acomodaron para aprovechar de mejor manera el espacio disponible en la placa de MDF.
 Se verificó que el archivo tuviera las dimensiones correctas y que estuviera preparado para trabajar con un material de **3 mm de grosor**.
@@ -116,10 +90,12 @@ Después se llevó el archivo a la cortadora láser para realizar el corte de ca
 ---
 # Ensamble del brazo
 
-Después de tener todas las piezas se comenzó con el ensamble del brazo robótico.
+Después de tener todas las piezas se comenzó con el ensamble del brazo robótico siguiendo un manual con intrucciones el cual fue el siguiente:
+
+**Instrucciones del armado :**  
+[Ver Instrucciones](https://es.slideshare.net/slideshow/instrucciones-armarbrazorobotico/147417473#google_vignette)
 
 Primero se armó la base y posteriormente se fueron agregando los diferentes soportes, brazos y servomotores.
-
 Durante el ensamble se tuvo que revisar constantemente que las piezas pudieran moverse libremente y que los servomotores no chocaran con la estructura.
 
 Los servomotores SG90 fueron colocados en diferentes partes del brazo para controlar:
@@ -129,24 +105,11 @@ Los servomotores SG90 fueron colocados en diferentes partes del brazo para contr
 3. Movimiento del brazo superior.
 4. Apertura y cierre de la pinza.
 
-> **Espacio para fotografía del armado de la base**
-
-<!-- Agregar aquí fotografía -->
-
-> **Espacio para fotografía del brazo durante el ensamble**
-
-<!-- Agregar aquí fotografía -->
-
-> **Espacio para fotografía del brazo completamente ensamblado**
-
-<!-- Agregar aquí fotografía -->
-
 ---
 
 # Circuito electrónico
 
 Para controlar el brazo se utilizó un **Arduino**, cuatro potenciómetros y cuatro servomotores SG90.
-
 Cada potenciómetro se encarga de controlar un movimiento diferente del brazo. Al girar un potenciómetro, Arduino lee su valor y lo convierte en un ángulo que posteriormente se manda al servomotor correspondiente.
 
 Las conexiones utilizadas fueron:
@@ -159,14 +122,12 @@ Las conexiones utilizadas fueron:
 | Pinza | Pin digital 9 | A3 |
 
 El Arduino fue conectado mediante un **cable USB A-B**, utilizado tanto para cargar el programa como para realizar las primeras pruebas del circuito.
+Primero se realizó un modelo en Tinkercad para simular el circuito con el código para posteriormente realizar las conexiones en físico.
 
-> **Espacio para imagen del circuito**
+![Circuito](assets/img/05-brazorobot/picArduino.png)
 
-<!-- Agregar aquí fotografía o captura del circuito -->
-
+<p align="center"><em>Circuito realizado en Tinkercad .</em></p>
 > **Espacio para fotografía del circuito físico**
-
-<!-- Agregar aquí fotografía del Arduino, protoboard y potenciómetros -->
 
 ---
 
