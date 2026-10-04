@@ -21,7 +21,7 @@ Los materiales utilizados para la realización del brazo robótico fueron:
 |---|---:|---|
 | Arduino | 1 | Controlar los servomotores y recibir la señal de los potenciómetros |
 | Servomotores SG90 | 4 | Realizar los movimientos del brazo y de la pinza |
-| Potenciómetros | 4 | Controlar manualmente la posición de cada servomotor |
+| Potenciómetros 1kOhms | 4 | Controlar manualmente la posición de cada servomotor |
 | Protoboard | 1 | Realizar las conexiones del circuito |
 | Cables jumper | Varios | Conectar los componentes |
 | Cable USB A-B | 1 | Programar y alimentar el Arduino |
@@ -90,7 +90,7 @@ Después se llevó el archivo a la cortadora láser para realizar el corte de ca
 ---
 # Ensamble del brazo
 
-Después de tener todas las piezas se comenzó con el ensamble del brazo robótico siguiendo un manual con intrucciones el cual fue el siguiente:
+Después de tener todas las piezas se comenzó con el ensamble del brazo robótico siguiendo un manual con instrucciones el cual fue el siguiente:
 
 **Instrucciones del armado :**  
 [Ver Instrucciones](https://es.slideshare.net/slideshow/instrucciones-armarbrazorobotico/147417473#google_vignette)
@@ -127,7 +127,7 @@ Primero se realizó un modelo en Tinkercad para simular el circuito con el códi
 ![Circuito](assets/img/05-brazorobot/picArduino.png)
 
 <p align="center"><em>Circuito realizado en Tinkercad .</em></p>
-> **Espacio para fotografía del circuito físico**
+
 
 ---
 
@@ -138,4 +138,27 @@ Para controlar los servomotores se utilizó la librería `Servo.h` de Arduino.
 El programa lee el valor de cada potenciómetro utilizando las entradas analógicas del Arduino. Como los potenciómetros entregan valores entre 0 y 1023, estos valores se convierten a un rango aproximado entre 0° y 180° para controlar la posición de cada servomotor.
 
 El código utilizado fue el siguiente:
+
+
+![Código1](assets/img/05-brazorobot/Codigo1.jpg)
+![Código2](assets/img/05-brazorobot/Codigo2.jpg)
+![Código3](assets/img/05-brazorobot/Codigo3.jpg)
+
+<p align="center"><em>Código usado para el funcionamiento.</em></p>
+
+---
+# Videos del funcionamiento del brazo robótico
+**Video del brazo robótico funcionando **  
+
+**Video del corte:**  
+<video width="700" controls>
+  <source src="{{ 'assets/videos/03-arduino/04-brazorobot/videoRobotSolo.mp4' | relative_url }}" type="video/mp4">
+</video>
+
+**Video del brazo robótico pasandole la pelota a otro brazo **  
+
+**Video del corte:**  
+<video width="700" controls>
+  <source src="{{ 'assets/videos/03-arduino/04-brazorobot/videoRobot2.mp4' | relative_url }}" type="video/mp4">
+</video>
 
