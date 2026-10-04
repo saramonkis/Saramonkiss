@@ -128,7 +128,7 @@ También se puede **personalizar el gatito** antes de jugar escogiendo diferente
   border:1px solid #ffffff18;
   background:#ffffff0c;
 }
-.gg-item{font-weight:800}
+.gg-item{font-weight:800;cursor:pointer;user-select:none}
 .gg-item.gg-selected{
   transform:translateX(7px);
   border-color:#ff9dcec0;
@@ -253,19 +253,19 @@ addEventListener("keydown",e=>{
 });
 addEventListener("keyup",e=>keys.delete(key(e).toLowerCase()));
 C.tabIndex=0;
-C.addEventListener("click",()=>C.focus());
+C.addEventListener("click",()=>C.focus());\noverlay.addEventListener("click",()=>C.focus());
 
 function showMenu(){
  state="menu";choice=0;overlay.classList.remove("gg-hidden");hud.classList.add("gg-hidden");
  custom.classList.add("gg-hidden");menu.classList.remove("gg-hidden");
  kicker.textContent="PLANETA MIAU-9";title.textContent="Gatitos Galácticos";
  txt.textContent="Shooter kawaii de gatitos espaciales contra una invasión de ratas. Haz clic en el juego y usa el teclado.";
- hint.textContent="W/S o ↑/↓ para elegir · ESPACIO para aceptar";
+ hint.textContent="Haz clic en una opción o usa W/S o ↑/↓ · ESPACIO para aceptar";
  renderMenu();
 }
 function renderMenu(){
  menu.innerHTML="";
- opts.forEach((o,i)=>{const d=document.createElement("div");d.className="gg-item"+(i===choice?" gg-selected":"");d.textContent=o[0];menu.appendChild(d)});
+ opts.forEach((o,i)=>{const d=document.createElement("div");d.className="gg-item"+(i===choice?" gg-selected":"");d.textContent=o[0];d.addEventListener("click",()=>{choice=i;renderMenu();opts[i][1]();});menu.appendChild(d)});
 }
 function menuKey(k){
  if(k==="ArrowUp"||k==="w"||k==="W"){choice=(choice+opts.length-1)%opts.length;renderMenu()}
