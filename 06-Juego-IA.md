@@ -194,273 +194,616 @@ También se puede **personalizar el gatito** antes de jugar escogiendo diferente
 </style>
 
 <script>
-(function(){
-const C=document.getElementById("gg-canvas"),X=C.getContext("2d"),W=C.width,H=C.height;
-const overlay=document.getElementById("gg-overlay"),menu=document.getElementById("gg-menu"),custom=document.getElementById("gg-custom");
-const kicker=document.getElementById("gg-kicker"),title=document.getElementById("gg-title"),txt=document.getElementById("gg-text"),hint=document.getElementById("gg-hint");
-const hud=document.getElementById("gg-hud"),livesEl=document.getElementById("gg-lives"),scoreEl=document.getElementById("gg-score"),waveEl=document.getElementById("gg-wave");
-const bossHud=document.getElementById("gg-boss-hud"),bossLife=document.getElementById("gg-boss-life"),toast=document.getElementById("gg-toast");
-const keys=new Set();
+(function () {
+  "use strict";
 
-const skins=[
- ["Rosa cósmico","#ff9fd2","#fff0f8"],
- ["Azul nebulosa","#80dfff","#e9fbff"],
- ["Lila lunar","#b9a7ff","#f1edff"],
- ["Naranja solar","#ffb36b","#fff0de"],
- ["Menta estelar","#7ee6c2","#ecfff8"],
- ["Café meteorito","#b98a6d","#f8e8dc"]
-];
-const accessories=["Moño estelar","Casco espacial","Visor corazón","Corona lunar","Sin accesorio"];
+  var canvas = document.getElementById("gg-canvas");
+  var ctx = canvas.getContext("2d");
+  var W = canvas.width;
+  var H = canvas.height;
 
-let skin=0,acc=0,state="menu",mode="story",choice=0,score=0,lives=3,wave=1,last=0,spawn=0,waveTime=0,inv=0,boss=null,storyStage=0,slide=0,slides=[];
-const bullets=[],enemies=[],enemyBullets=[],particles=[];
-const stars=Array.from({length:125},()=>({x:Math.random()*W,y:Math.random()*H,r:.4+Math.random()*1.6,s:8+Math.random()*20,a:.25+Math.random()*.7}));
-const p={x:W/2,y:H-70,w:56,h:44,speed:325,cd:0};
+  var overlay = document.getElementById("gg-overlay");
+  var menu = document.getElementById("gg-menu");
+  var custom = document.getElementById("gg-custom");
+  var kicker = document.getElementById("gg-kicker");
+  var title = document.getElementById("gg-title");
+  var text = document.getElementById("gg-text");
+  var hint = document.getElementById("gg-hint");
+  var hud = document.getElementById("gg-hud");
+  var livesEl = document.getElementById("gg-lives");
+  var scoreEl = document.getElementById("gg-score");
+  var waveEl = document.getElementById("gg-wave");
+  var bossHud = document.getElementById("gg-boss-hud");
+  var bossLife = document.getElementById("gg-boss-life");
+  var toast = document.getElementById("gg-toast");
 
-const intro=[
- ["CAPÍTULO 1 · UNA SEÑAL EXTRAÑA","Algo se acerca a Miau-9","El planeta de los gatitos vivía tranquilo entre jardines de estrellas. Una noche aparecieron cientos de naves con forma de queso: las ratas habían llegado."],
- ["TRANSMISIÓN RATA","Venimos por lo que nos quitaron","Las ratas dicen que fueron rechazadas, exiliadas y obligadas a abandonar sus hogares. Aseguran que quieren recuperar un lugar en la galaxia."],
- ["MISIÓN","Defiende Miau-9","Muévete con WASD o las flechas y dispara con ESPACIO. Sobrevive a las oleadas y descubre qué hay detrás de la invasión."]
-];
-const middle=[
- ["ARCHIVO ANTIGUO","La historia estaba incompleta","Los registros muestran que fueron humanos quienes expulsaron a las ratas de sus antiguas colonias y tomaron sus recursos. Miau-9 nunca participó en aquella guerra."],
- ["ALERTA","El Almirante Rattus se acerca","Los gatitos ofrecen diálogo, pero las tropas rata continúan atacando. Su nave principal acaba de entrar en órbita."]
-];
-const reveal=[
- ["JEFE FINAL · ALMIRANTE RATTUS","La verdadera razón","Rattus confiesa: los humanos sí les quitaron sus territorios, pero ahora invaden otros mundos porque les gusta conquistar y controlar nuevos planetas."],
- ["ÚLTIMA MISIÓN","Rompe el ciclo","Una injusticia pasada no justifica repetirla contra otros. Derrota a Rattus y protege Miau-9."]
-];
+  var skins = [
+    ["Rosa cosmico", "#ff9fd2", "#fff0f8"],
+    ["Azul nebulosa", "#80dfff", "#e9fbff"],
+    ["Lila lunar", "#b9a7ff", "#f1edff"],
+    ["Naranja solar", "#ffb36b", "#fff0de"],
+    ["Menta estelar", "#7ee6c2", "#ecfff8"],
+    ["Cafe meteorito", "#b98a6d", "#f8e8dc"]
+  ];
+  var accessories = ["Mono estelar", "Casco espacial", "Visor corazon", "Corona lunar", "Sin accesorio"];
 
-const opts=[
- ["Modo historia",()=>startStory()],
- ["Modo libre",()=>startGame("free")],
- ["Personalizar gatito",()=>openCustom()],
- ["Controles",()=>showControls()]
-];
+  var skin = 0;
+  var acc = 0;
+  var state = "menu";
+  var mode = "story";
+  var selected = 0;
+  var score = 0;
+  var lives = 3;
+  var wave = 1;
+  var spawnTimer = 0;
+  var waveTimer = 0;
+  var last = 0;
+  var inv = 0;
+  var boss = null;
+  var storyPart = 0;
+  var storyIndex = 0;
+  var keys = {};
 
-function key(e){return e.code==="Space"?" ":e.key}
-function insideGame(){return document.activeElement===C || C.matches(":hover")}
-addEventListener("keydown",e=>{
- const k=key(e);
- if(!insideGame() && state==="play")return;
- if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight","w","a","s","d","W","A","S","D"," "].includes(k))e.preventDefault();
- keys.add(k.toLowerCase());
- if(e.repeat&&state!=="play")return;
- if(state==="menu")menuKey(k);
- else if(state==="custom")customKey(k);
- else if(state==="slide"&&k===" ")nextSlide();
- else if((state==="over"||state==="win")&&k===" ")showMenu();
-});
-addEventListener("keyup",e=>keys.delete(key(e).toLowerCase()));
-C.tabIndex=0;
-C.addEventListener("click",()=>C.focus());\noverlay.addEventListener("click",()=>C.focus());
+  var bullets = [];
+  var enemies = [];
+  var enemyBullets = [];
+  var stars = [];
+  var player = {x: W / 2, y: H - 65, w: 52, h: 42, speed: 310, cooldown: 0};
 
-function showMenu(){
- state="menu";choice=0;overlay.classList.remove("gg-hidden");hud.classList.add("gg-hidden");
- custom.classList.add("gg-hidden");menu.classList.remove("gg-hidden");
- kicker.textContent="PLANETA MIAU-9";title.textContent="Gatitos Galácticos";
- txt.textContent="Shooter kawaii de gatitos espaciales contra una invasión de ratas. Haz clic en el juego y usa el teclado.";
- hint.textContent="Haz clic en una opción o usa W/S o ↑/↓ · ESPACIO para aceptar";
- renderMenu();
-}
-function renderMenu(){
- menu.innerHTML="";
- opts.forEach((o,i)=>{const d=document.createElement("div");d.className="gg-item"+(i===choice?" gg-selected":"");d.textContent=o[0];d.addEventListener("click",()=>{choice=i;renderMenu();opts[i][1]();});menu.appendChild(d)});
-}
-function menuKey(k){
- if(k==="ArrowUp"||k==="w"||k==="W"){choice=(choice+opts.length-1)%opts.length;renderMenu()}
- if(k==="ArrowDown"||k==="s"||k==="S"){choice=(choice+1)%opts.length;renderMenu()}
- if(k===" ")opts[choice][1]();
-}
-function openCustom(){
- state="custom";menu.classList.add("gg-hidden");custom.classList.remove("gg-hidden");
- kicker.textContent="TALLER DE MODA ESPACIAL";title.textContent="Personaliza tu gatito";
- txt.textContent="Escoge el pelaje y un accesorio.";
- hint.textContent="A/D o ←/→: pelaje · W/S o ↑/↓: accesorio · ESPACIO: guardar";
- renderCustom();
-}
-function renderCustom(){
- custom.innerHTML='<div class="gg-row"><b>Pelaje</b><span>'+skins[skin][0]+'</span></div><div class="gg-row"><b>Accesorio</b><span>'+accessories[acc]+'</span></div><div class="gg-row"><b>Vista previa</b><span>🐱 ✦ 🚀</span></div>';
-}
-function customKey(k){
- if(k==="ArrowLeft"||k==="a"||k==="A"){skin=(skin+skins.length-1)%skins.length;renderCustom()}
- if(k==="ArrowRight"||k==="d"||k==="D"){skin=(skin+1)%skins.length;renderCustom()}
- if(k==="ArrowUp"||k==="w"||k==="W"){acc=(acc+accessories.length-1)%accessories.length;renderCustom()}
- if(k==="ArrowDown"||k==="s"||k==="S"){acc=(acc+1)%accessories.length;renderCustom()}
- if(k===" ")showMenu();
-}
-function showControls(){
- state="slide";menu.classList.add("gg-hidden");custom.classList.add("gg-hidden");
- kicker.textContent="CONTROLES";title.textContent="Solo teclado";
- txt.innerHTML="<b>WASD o flechas</b>: mover al gatito.<br><b>ESPACIO</b>: disparar y aceptar opciones.";
- hint.textContent="ESPACIO para volver";slides=[];slide=-1;
-}
-function startStory(){mode="story";storyStage=0;showSlides(intro)}
-function showSlides(s){slides=s;slide=0;state="slide";overlay.classList.remove("gg-hidden");hud.classList.add("gg-hidden");menu.classList.add("gg-hidden");custom.classList.add("gg-hidden");renderSlide()}
-function renderSlide(){const s=slides[slide];kicker.textContent=s[0];title.textContent=s[1];txt.textContent=s[2];hint.textContent="ESPACIO para continuar"}
-function nextSlide(){
- if(slide===-1){showMenu();return}
- slide++;
- if(slide<slides.length){renderSlide();return}
- if(mode==="story"&&storyStage===0){storyStage=1;startGame("story")}
- else if(mode==="story"&&storyStage===2){storyStage=3;resume(false)}
- else if(mode==="story"&&storyStage===4){storyStage=5;resume(true)}
- else showMenu();
-}
-function reset(){bullets.length=0;enemies.length=0;enemyBullets.length=0;particles.length=0;boss=null}
-function startGame(m){
- mode=m;reset();score=0;lives=3;wave=1;spawn=0;waveTime=0;inv=0;p.x=W/2;p.y=H-70;p.cd=0;
- state="play";overlay.classList.add("gg-hidden");hud.classList.remove("gg-hidden");bossHud.classList.add("gg-hidden");updateHud();C.focus();
- if(m==="free")say("Modo libre: resiste todo lo que puedas ✦",2000);
-}
-function resume(makeBoss){state="play";overlay.classList.add("gg-hidden");hud.classList.remove("gg-hidden");C.focus();if(makeBoss)makeBossFn()}
-function updateHud(){
- livesEl.textContent=lives;scoreEl.textContent=score;waveEl.textContent=wave;
- if(boss){bossHud.classList.remove("gg-hidden");bossLife.style.width=Math.max(0,boss.hp/boss.max*100)+"%"}else bossHud.classList.add("gg-hidden");
-}
-function makeBossFn(){enemies.length=0;enemyBullets.length=0;boss={x:W/2,y:105,w:160,h:108,hp:65,max:65,t:0,cd:0};updateHud();say("JEFE FINAL: Almirante Rattus",2200)}
-function spawnRat(){
- let type="normal",r=Math.random();
- if(wave>=3&&r>.8)type="tank";else if(wave>=2&&r>.58)type="zig";
- let e={x:60+Math.random()*(W-120),y:-45,w:44,h:36,hp:1,s:76+wave*9+Math.random()*22,t:Math.random()*8,type};
- if(type==="tank"){e.w=62;e.h=46;e.hp=3;e.s*=.72}
- if(type==="zig")e.hp=2;
- enemies.push(e);
-}
-function shoot(){bullets.push({x:p.x,y:p.y-30,r:5,s:540});p.cd=.18}
-function enemyShot(x,y,vx,vy){enemyBullets.push({x,y,vx,vy,r:6})}
-function hit(r,c){const x=Math.max(r.x-r.w/2,Math.min(c.x,r.x+r.w/2)),y=Math.max(r.y-r.h/2,Math.min(c.y,r.y+r.h/2)),dx=c.x-x,dy=c.y-y;return dx*dx+dy*dy<c.r*c.r}
-function overlap(a,b){return Math.abs(a.x-b.x)<(a.w+b.w)/2&&Math.abs(a.y-b.y)<(a.h+b.h)/2}
-function burst(x,y,c,n){for(let i=0;i<n;i++){let a=Math.random()*Math.PI*2,s=40+Math.random()*140;particles.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,life:.4+Math.random()*.4,max:.8,r:2+Math.random()*3,c})}}
-function damage(){if(inv>0||state!=="play")return;lives--;inv=1.2;burst(p.x,p.y,"#ff9fd2",18);updateHud();if(lives<=0)gameOver()}
-function gameOver(){state="over";overlay.classList.remove("gg-hidden");hud.classList.add("gg-hidden");menu.classList.add("gg-hidden");kicker.textContent="MISIÓN FALLIDA";title.textContent="Game Over";txt.textContent="Puntaje final: "+score+". Las ratas siguen en órbita, pero los gatitos volverán a intentarlo.";hint.textContent="ESPACIO para volver al menú"}
-function win(){state="win";overlay.classList.remove("gg-hidden");hud.classList.add("gg-hidden");kicker.textContent="MIAU-9 ESTÁ A SALVO";title.textContent="Victoria galáctica ✦";txt.textContent="Derrotaste al Almirante Rattus con "+score+" puntos. Los gatitos detuvieron la invasión.";hint.textContent="ESPACIO para volver al menú"}
-function storyCheck(){
- if(mode!=="story")return;
- if(storyStage===1&&score>=500){storyStage=2;showSlides(middle)}
- else if(storyStage===3&&score>=1100){storyStage=4;showSlides(reveal)}
-}
-function update(dt){
- stars.forEach(s=>{s.y+=s.s*dt;if(s.y>H){s.y=-3;s.x=Math.random()*W}});
- if(state!=="play")return;
- inv=Math.max(0,inv-dt);p.cd=Math.max(0,p.cd-dt);waveTime+=dt;
- let mx=0,my=0;
- if(keys.has("a")||keys.has("arrowleft"))mx--;
- if(keys.has("d")||keys.has("arrowright"))mx++;
- if(keys.has("w")||keys.has("arrowup"))my--;
- if(keys.has("s")||keys.has("arrowdown"))my++;
- if(mx&&my){mx*=.707;my*=.707}
- p.x+=mx*p.speed*dt;p.y+=my*p.speed*dt;
- p.x=Math.max(36,Math.min(W-36,p.x));p.y=Math.max(H*.43,Math.min(H-38,p.y));
- if(keys.has(" ")&&p.cd<=0)shoot();
+  for (var si = 0; si < 110; si++) {
+    stars.push({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      r: 0.5 + Math.random() * 1.5,
+      s: 8 + Math.random() * 18
+    });
+  }
 
- if(!boss){
-   spawn-=dt;
-   if(spawn<=0){spawnRat();spawn=Math.max(.28,1.03-wave*.07)}
-   if(waveTime>18){waveTime=0;wave++;say("Oleada "+wave,1000);updateHud()}
- }
- bullets.forEach(b=>b.y-=b.s*dt);
- for(let i=bullets.length-1;i>=0;i--)if(bullets[i].y<-20)bullets.splice(i,1);
+  var story1 = [
+    ["CAPITULO 1", "La invasion", "Miau-9 era un planeta tranquilo hasta que aparecieron naves de ratas espaciales."],
+    ["TRANSMISION RATA", "Venimos por lo que nos quitaron", "Las ratas dicen que fueron rechazadas, exiliadas y expulsadas de sus antiguos hogares."],
+    ["MISION", "Defiende Miau-9", "Usa WASD o las flechas para moverte y ESPACIO para disparar."]
+  ];
 
- for(let i=enemies.length-1;i>=0;i--){
-   let e=enemies[i];e.t+=dt;
-   if(e.type==="zig")e.x+=Math.sin(e.t*4.2)*108*dt;
-   e.y+=e.s*dt;
-   if(e.y>H+55){enemies.splice(i,1);if(mode==="story")damage();continue}
-   if(overlap(p,e)){enemies.splice(i,1);damage();continue}
-   if(Math.random()<.003*(1+wave*.12)){
-     let dx=p.x-e.x,dy=p.y-e.y,m=Math.hypot(dx,dy)||1;
-     enemyShot(e.x,e.y+16,dx/m*90,dy/m*150);
-   }
- }
- if(boss){
-   boss.t+=dt;boss.cd-=dt;
-   boss.x=W/2+Math.sin(boss.t*.9)*280;
-   boss.y=108+Math.sin(boss.t*1.6)*20;
-   if(boss.cd<=0){
-     for(let a=-2;a<=2;a++){let ang=Math.PI/2+a*.2;enemyShot(boss.x,boss.y+40,Math.cos(ang)*160,Math.sin(ang)*190)}
-     boss.cd=1.05;
-   }
- }
- for(let i=enemyBullets.length-1;i>=0;i--){
-   let b=enemyBullets[i];b.x+=b.vx*dt;b.y+=b.vy*dt;
-   if(b.x<-30||b.x>W+30||b.y>H+30){enemyBullets.splice(i,1);continue}
-   if(hit(p,b)){enemyBullets.splice(i,1);damage()}
- }
- for(let bi=bullets.length-1;bi>=0;bi--){
-   let b=bullets[bi],used=false;
-   for(let ei=enemies.length-1;ei>=0;ei--){
-     let e=enemies[ei];
-     if(hit(e,b)){
-       bullets.splice(bi,1);e.hp--;used=true;burst(b.x,b.y,"#9ef3ff",6);
-       if(e.hp<=0){
-         score+=e.type==="tank"?120:e.type==="zig"?80:50;
-         burst(e.x,e.y,"#ffb3d9",16);enemies.splice(ei,1);updateHud();storyCheck();
-       }
-       break;
-     }
-   }
-   if(used)continue;
-   if(boss&&hit(boss,b)){
-     bullets.splice(bi,1);boss.hp--;score+=10;burst(b.x,b.y,"#ffd0e8",7);updateHud();
-     if(boss.hp<=0){burst(boss.x,boss.y,"#ff9fd2",70);boss=null;score+=2000;updateHud();win();return}
-   }
- }
- for(let i=particles.length-1;i>=0;i--){let q=particles[i];q.x+=q.vx*dt;q.y+=q.vy*dt;q.life-=dt;if(q.life<=0)particles.splice(i,1)}
-}
-function background(){
- let g=X.createLinearGradient(0,0,0,H);g.addColorStop(0,"#06081d");g.addColorStop(.55,"#120b35");g.addColorStop(1,"#21104b");
- X.fillStyle=g;X.fillRect(0,0,W,H);
- X.globalAlpha=.7;X.fillStyle="#8658c7";X.beginPath();X.arc(W-125,125,75,0,Math.PI*2);X.fill();X.globalAlpha=1;
- stars.forEach(s=>{X.globalAlpha=s.a;X.fillStyle="#fff";X.beginPath();X.arc(s.x,s.y,s.r,0,Math.PI*2);X.fill()});X.globalAlpha=1;
-}
-function cat(x,y,sc){
- let c=skins[skin];X.save();X.translate(x,y);X.scale(sc,sc);if(inv>0&&Math.floor(inv*12)%2===0)X.globalAlpha=.35;
- X.fillStyle=c[1];
- X.beginPath();X.moveTo(-21,-13);X.lineTo(-12,-34);X.lineTo(-2,-14);X.closePath();X.fill();
- X.beginPath();X.moveTo(21,-13);X.lineTo(12,-34);X.lineTo(2,-14);X.closePath();X.fill();
- X.beginPath();X.ellipse(0,-3,27,24,0,0,Math.PI*2);X.fill();
- X.fillStyle=c[2];X.beginPath();X.ellipse(0,6,13,9,0,0,Math.PI*2);X.fill();
- X.fillStyle="#17142d";X.beginPath();X.arc(-9,-5,3,0,Math.PI*2);X.arc(9,-5,3,0,Math.PI*2);X.fill();
- X.fillStyle="#ff7faf";X.beginPath();X.arc(0,4,2.3,0,Math.PI*2);X.fill();
- accessory(accessories[acc]);
- X.fillStyle="#b9a7ff";X.fillRect(-35,13,12,10);X.fillRect(23,13,12,10);
- X.restore();
-}
-function accessory(a){
- if(a==="Moño estelar"){X.fillStyle="#ff5fa9";X.fillRect(10,-28,16,14);X.fillStyle="#ffe59d";X.beginPath();X.arc(17,-21,4,0,Math.PI*2);X.fill()}
- else if(a==="Casco espacial"){X.strokeStyle="#9ef3ff";X.lineWidth=4;X.beginPath();X.arc(0,-4,31,Math.PI*1.08,Math.PI*1.92);X.stroke()}
- else if(a==="Visor corazón"){X.fillStyle="#ff6fb4";X.font="18px sans-serif";X.textAlign="center";X.fillText("♥  ♥",0,0)}
- else if(a==="Corona lunar"){X.fillStyle="#ffe59d";X.beginPath();X.moveTo(-14,-25);X.lineTo(-8,-38);X.lineTo(0,-28);X.lineTo(8,-39);X.lineTo(15,-25);X.closePath();X.fill()}
-}
-function rat(e){
- X.save();X.translate(e.x,e.y);
- X.fillStyle="#f4ca65";X.beginPath();X.moveTo(-e.w/2,14);X.lineTo(e.w/2,7);X.lineTo(e.w/2-8,e.h/2);X.lineTo(-e.w/2+6,e.h/2);X.closePath();X.fill();
- X.fillStyle=e.type==="tank"?"#8c7aa8":"#a692b8";X.beginPath();X.ellipse(0,-5,e.type==="tank"?24:18,e.type==="tank"?19:15,0,0,Math.PI*2);X.fill();
- X.beginPath();X.arc(-13,-17,6,0,Math.PI*2);X.arc(13,-17,6,0,Math.PI*2);X.fill();
- X.fillStyle="#17142d";X.beginPath();X.arc(-6,-6,2.3,0,Math.PI*2);X.arc(6,-6,2.3,0,Math.PI*2);X.fill();
- X.restore();
-}
-function drawBoss(){
- if(!boss)return;X.save();X.translate(boss.x,boss.y);
- X.fillStyle="#6e4a98";X.beginPath();X.ellipse(0,20,78,42,0,0,Math.PI*2);X.fill();
- X.fillStyle="#ae95c9";X.beginPath();X.ellipse(0,-12,42,34,0,0,Math.PI*2);X.fill();
- X.fillStyle="#ffe59d";X.beginPath();X.moveTo(-26,-42);X.lineTo(-14,-62);X.lineTo(0,-46);X.lineTo(14,-64);X.lineTo(29,-42);X.closePath();X.fill();
- X.fillStyle="#17142d";X.beginPath();X.arc(-14,-15,5,0,Math.PI*2);X.arc(14,-15,5,0,Math.PI*2);X.fill();
- X.restore();
-}
-function render(){
- background();enemies.forEach(rat);drawBoss();
- bullets.forEach(b=>{X.fillStyle="#d7fbff";X.beginPath();X.arc(b.x,b.y,b.r,0,Math.PI*2);X.fill()});
- enemyBullets.forEach(b=>{X.fillStyle="#ff92c3";X.beginPath();X.arc(b.x,b.y,b.r,0,Math.PI*2);X.fill()});
- particles.forEach(q=>{X.globalAlpha=Math.max(0,q.life/q.max);X.fillStyle=q.c;X.beginPath();X.arc(q.x,q.y,q.r,0,Math.PI*2);X.fill()});X.globalAlpha=1;
- if(state==="play"||state==="slide"||state==="over"||state==="win")cat(p.x,p.y,1);
- else{cat(W*.33,H*.68,1.15);cat(W*.67,H*.69,.9)}
-}
-let toastTimer;
-function say(s,ms){toast.textContent=s;toast.classList.remove("gg-hidden");clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.add("gg-hidden"),ms)}
-function loop(t){let dt=Math.min(.033,(t-last)/1000||0);last=t;update(dt);render();requestAnimationFrame(loop)}
-showMenu();requestAnimationFrame(loop);
+  var story2 = [
+    ["ARCHIVO ANTIGUO", "La historia estaba incompleta", "Los registros muestran que fueron humanos quienes quitaron a las ratas sus antiguos territorios y recursos."],
+    ["ALERTA", "Rattus se acerca", "Miau-9 no participo en aquella guerra, pero las ratas siguen atacando."]
+  ];
+
+  var story3 = [
+    ["JEFE FINAL", "Almirante Rattus", "Rattus revela que ahora coloniza otros planetas porque quiere conquistarlos, aunque quienes les quitaron todo originalmente fueron los humanos."],
+    ["ULTIMA MISION", "Protege Miau-9", "Derrota a Rattus y evita que la injusticia se repita contra otro planeta."]
+  ];
+
+  var menuOptions = [
+    {label:"Modo historia", action:function(){ beginStory(); }},
+    {label:"Modo libre", action:function(){ startGame("free"); }},
+    {label:"Personalizar gatito", action:function(){ openCustom(); }},
+    {label:"Controles", action:function(){ showControls(); }}
+  ];
+
+  function preventGameKeys(e) {
+    var k = e.key.toLowerCase();
+    if (k === " " || k.indexOf("arrow") === 0 || k === "w" || k === "a" || k === "s" || k === "d") {
+      e.preventDefault();
+    }
+  }
+
+  document.addEventListener("keydown", function(e) {
+    preventGameKeys(e);
+    var k = e.key.toLowerCase();
+    keys[k] = true;
+
+    if (state === "menu") {
+      if (k === "w" || k === "arrowup") {
+        selected = (selected + menuOptions.length - 1) % menuOptions.length;
+        renderMenu();
+      } else if (k === "s" || k === "arrowdown") {
+        selected = (selected + 1) % menuOptions.length;
+        renderMenu();
+      } else if (k === " " || k === "enter") {
+        menuOptions[selected].action();
+      }
+    } else if (state === "custom") {
+      if (k === "a" || k === "arrowleft") {
+        skin = (skin + skins.length - 1) % skins.length;
+        renderCustom();
+      } else if (k === "d" || k === "arrowright") {
+        skin = (skin + 1) % skins.length;
+        renderCustom();
+      } else if (k === "w" || k === "arrowup") {
+        acc = (acc + accessories.length - 1) % accessories.length;
+        renderCustom();
+      } else if (k === "s" || k === "arrowdown") {
+        acc = (acc + 1) % accessories.length;
+        renderCustom();
+      } else if (k === " " || k === "enter" || k === "escape") {
+        showMenu();
+      }
+    } else if (state === "story") {
+      if (k === " " || k === "enter") {
+        nextStory();
+      }
+    } else if (state === "controls" || state === "over" || state === "win") {
+      if (k === " " || k === "enter" || k === "escape") {
+        showMenu();
+      }
+    }
+  });
+
+  document.addEventListener("keyup", function(e) {
+    keys[e.key.toLowerCase()] = false;
+  });
+
+  function showMenu() {
+    state = "menu";
+    selected = 0;
+    overlay.classList.remove("gg-hidden");
+    hud.classList.add("gg-hidden");
+    custom.classList.add("gg-hidden");
+    menu.classList.remove("gg-hidden");
+    kicker.textContent = "PLANETA MIAU-9";
+    title.textContent = "Gatitos Galacticos";
+    text.textContent = "Defiende el planeta de una invasion de ratas espaciales.";
+    hint.textContent = "Haz clic en una opcion o usa W/S - Flechas - ESPACIO";
+    renderMenu();
+  }
+
+  function renderMenu() {
+    menu.innerHTML = "";
+    for (var i = 0; i < menuOptions.length; i++) {
+      (function(index) {
+        var d = document.createElement("div");
+        d.className = "gg-item" + (index === selected ? " gg-selected" : "");
+        d.textContent = menuOptions[index].label;
+        d.setAttribute("role", "button");
+        d.setAttribute("tabindex", "0");
+        d.addEventListener("click", function() {
+          selected = index;
+          menuOptions[index].action();
+        });
+        d.addEventListener("keydown", function(e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            menuOptions[index].action();
+          }
+        });
+        menu.appendChild(d);
+      })(i);
+    }
+  }
+
+  function openCustom() {
+    state = "custom";
+    menu.classList.add("gg-hidden");
+    custom.classList.remove("gg-hidden");
+    kicker.textContent = "TALLER DE MODA ESPACIAL";
+    title.textContent = "Personaliza tu gatito";
+    text.textContent = "Elige pelaje y accesorio.";
+    hint.textContent = "A/D o Flechas: pelaje - W/S: accesorio - ESPACIO: guardar";
+    renderCustom();
+  }
+
+  function renderCustom() {
+    custom.innerHTML = "";
+    var r1 = document.createElement("div");
+    r1.className = "gg-row";
+    r1.innerHTML = "<b>Pelaje</b><span>" + skins[skin][0] + "</span>";
+    var r2 = document.createElement("div");
+    r2.className = "gg-row";
+    r2.innerHTML = "<b>Accesorio</b><span>" + accessories[acc] + "</span>";
+    var r3 = document.createElement("div");
+    r3.className = "gg-row";
+    r3.innerHTML = "<b>Guardar</b><span>ESPACIO</span>";
+    custom.appendChild(r1);
+    custom.appendChild(r2);
+    custom.appendChild(r3);
+  }
+
+  function showControls() {
+    state = "controls";
+    menu.classList.add("gg-hidden");
+    custom.classList.add("gg-hidden");
+    kicker.textContent = "CONTROLES";
+    title.textContent = "Solo teclado";
+    text.innerHTML = "<b>WASD o flechas:</b> mover al gatito.<br><b>ESPACIO:</b> disparar o aceptar.";
+    hint.textContent = "ESPACIO para volver";
+  }
+
+  function beginStory() {
+    mode = "story";
+    storyPart = 1;
+    storyIndex = 0;
+    showStory(story1);
+  }
+
+  function showStory(arr) {
+    state = "story";
+    overlay.classList.remove("gg-hidden");
+    hud.classList.add("gg-hidden");
+    menu.classList.add("gg-hidden");
+    custom.classList.add("gg-hidden");
+    var s = arr[storyIndex];
+    kicker.textContent = s[0];
+    title.textContent = s[1];
+    text.textContent = s[2];
+    hint.textContent = "ESPACIO para continuar";
+  }
+
+  function nextStory() {
+    var arr = storyPart === 1 ? story1 : (storyPart === 2 ? story2 : story3);
+    storyIndex++;
+    if (storyIndex < arr.length) {
+      showStory(arr);
+      return;
+    }
+    if (storyPart === 1) {
+      startGame("story");
+    } else if (storyPart === 2) {
+      state = "play";
+      overlay.classList.add("gg-hidden");
+      hud.classList.remove("gg-hidden");
+    } else {
+      state = "play";
+      overlay.classList.add("gg-hidden");
+      hud.classList.remove("gg-hidden");
+      createBoss();
+    }
+  }
+
+  function startGame(m) {
+    mode = m;
+    state = "play";
+    score = 0;
+    lives = 3;
+    wave = 1;
+    spawnTimer = 0;
+    waveTimer = 0;
+    inv = 0;
+    boss = null;
+    bullets.length = 0;
+    enemies.length = 0;
+    enemyBullets.length = 0;
+    player.x = W / 2;
+    player.y = H - 65;
+    overlay.classList.add("gg-hidden");
+    hud.classList.remove("gg-hidden");
+    updateHud();
+    if (m === "free") {
+      say("Modo libre: resiste todo lo que puedas");
+    }
+  }
+
+  function createBoss() {
+    enemies.length = 0;
+    enemyBullets.length = 0;
+    boss = {x:W/2,y:105,w:150,h:95,hp:55,max:55,t:0,cd:0};
+    updateHud();
+    say("JEFE FINAL: Almirante Rattus");
+  }
+
+  function updateHud() {
+    livesEl.textContent = lives;
+    scoreEl.textContent = score;
+    waveEl.textContent = wave;
+    if (boss) {
+      bossHud.classList.remove("gg-hidden");
+      bossLife.style.width = Math.max(0, boss.hp / boss.max * 100) + "%";
+    } else {
+      bossHud.classList.add("gg-hidden");
+    }
+  }
+
+  function spawnEnemy() {
+    var type = "normal";
+    var r = Math.random();
+    if (wave >= 3 && r > 0.8) type = "tank";
+    else if (wave >= 2 && r > 0.6) type = "zig";
+    var e = {x:50+Math.random()*(W-100),y:-35,w:42,h:34,hp:1,s:72+wave*8,t:Math.random()*6,type:type};
+    if (type === "tank") { e.w = 58; e.h = 44; e.hp = 3; e.s *= 0.7; }
+    if (type === "zig") e.hp = 2;
+    enemies.push(e);
+  }
+
+  function shoot() {
+    bullets.push({x:player.x,y:player.y-28,r:5,s:520});
+    player.cooldown = 0.18;
+  }
+
+  function damage() {
+    if (inv > 0 || state !== "play") return;
+    lives--;
+    inv = 1;
+    updateHud();
+    if (lives <= 0) gameOver();
+  }
+
+  function gameOver() {
+    state = "over";
+    overlay.classList.remove("gg-hidden");
+    hud.classList.add("gg-hidden");
+    kicker.textContent = "MISION FALLIDA";
+    title.textContent = "Game Over";
+    text.textContent = "Puntaje final: " + score;
+    hint.textContent = "ESPACIO para volver";
+  }
+
+  function victory() {
+    state = "win";
+    overlay.classList.remove("gg-hidden");
+    hud.classList.add("gg-hidden");
+    kicker.textContent = "MIAU-9 ESTA A SALVO";
+    title.textContent = "Victoria galactica";
+    text.textContent = "Derrotaste al Almirante Rattus con " + score + " puntos.";
+    hint.textContent = "ESPACIO para volver";
+  }
+
+  function storyProgress() {
+    if (mode !== "story") return;
+    if (storyPart === 1 && score >= 450) {
+      storyPart = 2;
+      storyIndex = 0;
+      showStory(story2);
+    } else if (storyPart === 2 && score >= 1000) {
+      storyPart = 3;
+      storyIndex = 0;
+      showStory(story3);
+    }
+  }
+
+  function rectCircle(r, c) {
+    var cx = Math.max(r.x-r.w/2, Math.min(c.x, r.x+r.w/2));
+    var cy = Math.max(r.y-r.h/2, Math.min(c.y, r.y+r.h/2));
+    var dx = c.x-cx, dy = c.y-cy;
+    return dx*dx+dy*dy < c.r*c.r;
+  }
+
+  function overlap(a,b) {
+    return Math.abs(a.x-b.x) < (a.w+b.w)/2 && Math.abs(a.y-b.y) < (a.h+b.h)/2;
+  }
+
+  function update(dt) {
+    for (var s=0; s<stars.length; s++) {
+      stars[s].y += stars[s].s*dt;
+      if (stars[s].y > H) { stars[s].y = -2; stars[s].x = Math.random()*W; }
+    }
+
+    if (state !== "play") return;
+
+    inv = Math.max(0, inv-dt);
+    player.cooldown = Math.max(0, player.cooldown-dt);
+
+    var mx=0,my=0;
+    if (keys["a"] || keys["arrowleft"]) mx--;
+    if (keys["d"] || keys["arrowright"]) mx++;
+    if (keys["w"] || keys["arrowup"]) my--;
+    if (keys["s"] || keys["arrowdown"]) my++;
+    if (mx && my) { mx*=0.707; my*=0.707; }
+
+    player.x += mx*player.speed*dt;
+    player.y += my*player.speed*dt;
+    player.x = Math.max(32, Math.min(W-32, player.x));
+    player.y = Math.max(H*0.45, Math.min(H-35, player.y));
+
+    if (keys[" "] && player.cooldown <= 0) shoot();
+
+    if (!boss) {
+      spawnTimer -= dt;
+      waveTimer += dt;
+      if (spawnTimer <= 0) {
+        spawnEnemy();
+        spawnTimer = Math.max(0.35, 1.05-wave*0.06);
+      }
+      if (waveTimer > 18) {
+        waveTimer = 0;
+        wave++;
+        updateHud();
+      }
+    }
+
+    for (var bi=bullets.length-1; bi>=0; bi--) {
+      bullets[bi].y -= bullets[bi].s*dt;
+      if (bullets[bi].y < -20) bullets.splice(bi,1);
+    }
+
+    for (var ei=enemies.length-1; ei>=0; ei--) {
+      var e = enemies[ei];
+      e.t += dt;
+      if (e.type === "zig") e.x += Math.sin(e.t*4)*100*dt;
+      e.y += e.s*dt;
+
+      if (e.y > H+40) {
+        enemies.splice(ei,1);
+        if (mode === "story") damage();
+        continue;
+      }
+      if (overlap(player,e)) {
+        enemies.splice(ei,1);
+        damage();
+      }
+    }
+
+    if (boss) {
+      boss.t += dt;
+      boss.x = W/2 + Math.sin(boss.t)*260;
+      boss.y = 105 + Math.sin(boss.t*1.7)*18;
+    }
+
+    for (var b=bullets.length-1; b>=0; b--) {
+      var shot = bullets[b];
+      var used = false;
+
+      for (var j=enemies.length-1; j>=0; j--) {
+        if (rectCircle(enemies[j], shot)) {
+          enemies[j].hp--;
+          bullets.splice(b,1);
+          used = true;
+          if (enemies[j].hp <= 0) {
+            score += enemies[j].type === "tank" ? 120 : (enemies[j].type === "zig" ? 80 : 50);
+            enemies.splice(j,1);
+            updateHud();
+            storyProgress();
+          }
+          break;
+        }
+      }
+
+      if (!used && boss && rectCircle(boss, shot)) {
+        bullets.splice(b,1);
+        boss.hp--;
+        score += 10;
+        updateHud();
+        if (boss.hp <= 0) {
+          boss = null;
+          score += 1500;
+          updateHud();
+          victory();
+        }
+      }
+    }
+  }
+
+  function drawBackground() {
+    var g = ctx.createLinearGradient(0,0,0,H);
+    g.addColorStop(0,"#06081d");
+    g.addColorStop(0.55,"#120b35");
+    g.addColorStop(1,"#21104b");
+    ctx.fillStyle = g;
+    ctx.fillRect(0,0,W,H);
+
+    ctx.fillStyle = "#8660c7";
+    ctx.globalAlpha = 0.55;
+    ctx.beginPath();
+    ctx.arc(W-120,115,70,0,Math.PI*2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    ctx.fillStyle = "#fff";
+    for (var i=0;i<stars.length;i++) {
+      ctx.beginPath();
+      ctx.arc(stars[i].x,stars[i].y,stars[i].r,0,Math.PI*2);
+      ctx.fill();
+    }
+  }
+
+  function drawAccessory(name) {
+    if (name === "Mono estelar") {
+      ctx.fillStyle="#ff5fa9";
+      ctx.fillRect(10,-28,16,12);
+    } else if (name === "Casco espacial") {
+      ctx.strokeStyle="#9ef3ff";
+      ctx.lineWidth=4;
+      ctx.beginPath();
+      ctx.arc(0,-3,30,Math.PI*1.08,Math.PI*1.92);
+      ctx.stroke();
+    } else if (name === "Visor corazon") {
+      ctx.fillStyle="#ff6fb4";
+      ctx.font="16px sans-serif";
+      ctx.textAlign="center";
+      ctx.fillText("♥  ♥",0,0);
+    } else if (name === "Corona lunar") {
+      ctx.fillStyle="#ffe59d";
+      ctx.beginPath();
+      ctx.moveTo(-14,-25);ctx.lineTo(-8,-38);ctx.lineTo(0,-28);ctx.lineTo(8,-39);ctx.lineTo(15,-25);
+      ctx.closePath();
+      ctx.fill();
+    }
+  }
+
+  function drawCat(x,y,scale) {
+    var c=skins[skin];
+    ctx.save();
+    ctx.translate(x,y);
+    ctx.scale(scale,scale);
+    if (inv>0 && Math.floor(inv*12)%2===0) ctx.globalAlpha=0.35;
+
+    ctx.fillStyle=c[1];
+    ctx.beginPath();ctx.moveTo(-21,-13);ctx.lineTo(-12,-34);ctx.lineTo(-2,-14);ctx.closePath();ctx.fill();
+    ctx.beginPath();ctx.moveTo(21,-13);ctx.lineTo(12,-34);ctx.lineTo(2,-14);ctx.closePath();ctx.fill();
+    ctx.beginPath();ctx.ellipse(0,-3,27,24,0,0,Math.PI*2);ctx.fill();
+
+    ctx.fillStyle=c[2];
+    ctx.beginPath();ctx.ellipse(0,6,13,9,0,0,Math.PI*2);ctx.fill();
+
+    ctx.fillStyle="#17142d";
+    ctx.beginPath();ctx.arc(-9,-5,3,0,Math.PI*2);ctx.arc(9,-5,3,0,Math.PI*2);ctx.fill();
+
+    ctx.fillStyle="#ff7faf";
+    ctx.beginPath();ctx.arc(0,4,2.5,0,Math.PI*2);ctx.fill();
+
+    drawAccessory(accessories[acc]);
+    ctx.restore();
+  }
+
+  function drawRat(e) {
+    ctx.save();
+    ctx.translate(e.x,e.y);
+    ctx.fillStyle="#f4ca65";
+    ctx.beginPath();
+    ctx.moveTo(-e.w/2,13);ctx.lineTo(e.w/2,7);ctx.lineTo(e.w/2-7,e.h/2);ctx.lineTo(-e.w/2+5,e.h/2);
+    ctx.closePath();ctx.fill();
+
+    ctx.fillStyle=e.type==="tank" ? "#817092" : "#a692b8";
+    ctx.beginPath();ctx.ellipse(0,-5,e.type==="tank"?23:18,e.type==="tank"?18:15,0,0,Math.PI*2);ctx.fill();
+    ctx.beginPath();ctx.arc(-13,-17,6,0,Math.PI*2);ctx.arc(13,-17,6,0,Math.PI*2);ctx.fill();
+
+    ctx.fillStyle="#17142d";
+    ctx.beginPath();ctx.arc(-6,-6,2,0,Math.PI*2);ctx.arc(6,-6,2,0,Math.PI*2);ctx.fill();
+    ctx.restore();
+  }
+
+  function drawBoss() {
+    if (!boss) return;
+    ctx.save();
+    ctx.translate(boss.x,boss.y);
+    ctx.fillStyle="#6e4a98";
+    ctx.beginPath();ctx.ellipse(0,18,75,40,0,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle="#ae95c9";
+    ctx.beginPath();ctx.ellipse(0,-12,40,32,0,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle="#ffe59d";
+    ctx.beginPath();ctx.moveTo(-25,-40);ctx.lineTo(-13,-60);ctx.lineTo(0,-45);ctx.lineTo(13,-62);ctx.lineTo(28,-40);ctx.closePath();ctx.fill();
+    ctx.restore();
+  }
+
+  function render() {
+    drawBackground();
+
+    for (var i=0;i<enemies.length;i++) drawRat(enemies[i]);
+    drawBoss();
+
+    ctx.fillStyle="#d7fbff";
+    for (var b=0;b<bullets.length;b++) {
+      ctx.beginPath();
+      ctx.arc(bullets[b].x,bullets[b].y,bullets[b].r,0,Math.PI*2);
+      ctx.fill();
+    }
+
+    if (state === "play" || state === "story" || state === "over" || state === "win") {
+      drawCat(player.x,player.y,1);
+    } else {
+      drawCat(W*0.35,H*0.7,1.1);
+      drawCat(W*0.65,H*0.7,0.9);
+    }
+  }
+
+  var toastTimer = null;
+  function say(msg) {
+    toast.textContent = msg;
+    toast.classList.remove("gg-hidden");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.add("gg-hidden"); }, 1800);
+  }
+
+  function loop(t) {
+    var dt = Math.min(0.033, (t-last)/1000 || 0);
+    last=t;
+    update(dt);
+    render();
+    requestAnimationFrame(loop);
+  }
+
+  showMenu();
+  requestAnimationFrame(loop);
 })();
 </script>
 
