@@ -17,6 +17,7 @@ Contenido:
 - [3. Arduino][03]
 - [4. Elaboracion de cubo][04]
 - [5. Brazo Robot][05]
+- [6. Juego IA][06]
 
 
 [03]: 03-Arduino.md
@@ -24,3 +25,4 @@ Contenido:
 [02]: 02-semana-1.md
 [04]: 04-Elaboracion-cubo.md
 [05]: 05-Brazo-robot.md
+[06]: 06-Juego-IA.md
