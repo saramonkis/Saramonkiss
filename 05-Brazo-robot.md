@@ -131,7 +131,7 @@ Primero se realizó un modelo en Tinkercad para simular el circuito con el códi
 
 # Programación
 
-Para controlar los servomotores se utilizó la librería `Servo.h` de Arduino.
+Para controlar los servomotores se utilizó la librería `Servo.h` de Arduino y el programa para usar el código fue el de Arduino IDE.
 
 El programa lee el valor de cada potenciómetro utilizando las entradas analógicas del Arduino. Como los potenciómetros entregan valores entre 0 y 1023, estos valores se convierten a un rango aproximado entre 0° y 180° para controlar la posición de cada servomotor.
 
