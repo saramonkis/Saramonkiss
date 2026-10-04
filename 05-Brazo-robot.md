@@ -153,7 +153,6 @@ El código utilizado fue el siguiente:
   <source src="{{ 'assets/videos/03-arduino/04-brazorobot/videoRobotSolo.mp4' | relative_url }}" type="video/mp4">
 </video>
 
-**Video del **  
 
 **Video del  brazo robótico pasandole la pelota a otro brazo:**  
 <video width="700" controls>
