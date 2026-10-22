@@ -18,6 +18,7 @@ Contenido:
 - [4. Elaboracion de cubo][04]
 - [5. Brazo Robot][05]
 - [6. Juego IA][06]
+- [7. Impresion 3D][07]
 
 
 [03]: 03-Arduino.md
@@ -26,3 +27,4 @@ Contenido:
 [04]: 04-Elaboracion-cubo.md
 [05]: 05-Brazo-robot.md
 [06]: 06-Juego-IA.md
+[07]: 07-impresio-3D.md
