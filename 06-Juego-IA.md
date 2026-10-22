@@ -1,6 +1,6 @@
 ---
 layout: default
-title: impresion 3D
+title: juego ia 
 nav_order: 7
 ---
 
