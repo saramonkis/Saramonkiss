@@ -18,11 +18,9 @@ Crear una figura con al menos dos piezas móviles y otra diseñada con IA de má
 
 - Autodesk Fusion.
 - MakerLab de MakerWorld.
-- Impresora Creality CR-10.
 - Impresora Creality CR-10 SE.
-- Segunda impresora para comparar: [Completar modelo].
-- Filamento: [Completar material].
-- Programa de laminado: [Completar].
+- Impresora Creality Ender-3 V3 KE.
+- Filamento: PLA (blanco y rojo).
 
 ---
 
@@ -98,9 +96,9 @@ Para esta figura utilicé **MakerLab de MakerWorld**. Cargué una imagen de Dart
 
 ### Imagen de referencia y modelo generado
 
-![Imagen de referencia](imagenes/vader-referencia.png)
+![Imagen de referencia](assets/img/07-impresion3d/modelodarth.png)
 
-![Modelo generado en MakerLab](imagenes/vader-modelo.png)
+![Modelo generado en MakerLab](assets/img/07-impresion3d/markerlabdarth.png)
 
 ### Preparación e impresión
 
@@ -143,11 +141,8 @@ Después de imprimir se retiraron los soportes para revisar el acabado de la fig
 
 ## 5. Videos
 
-- [Impresión del fidget toy en Creality CR-10](videos/fidget-creality-cr10.mp4).
-- [Impresión del fidget toy en la segunda impresora](videos/fidget-segunda-impresora.mp4).
-- [Impresión de Darth Vader en Creality CR-10 SE](videos/vader-impresion.mp4).
-- [Movimiento del primer fidget toy](videos/fidget-movimiento-1.mp4).
-- [Movimiento del segundo fidget toy](videos/fidget-movimiento-2.mp4).
+- [Impresión en Creality CR-10 SE](assets/videos/07-impresio3d/videocrealitylabdemario.mp4).
+- [Movimiento de los fidget toys](assets/videos/07-impresio3d/fidgettoy.mp4).
 
 ---
 
@@ -155,10 +150,10 @@ Después de imprimir se retiraron los soportes para revisar el acabado de la fig
 
 Esta práctica me ayudó a entender cómo pasar de un diseño digital a una pieza impresa. En Fusion trabajé con bocetos, extrusiones y patrones, mientras que con MakerLab pude generar una figura a partir de una imagen usando IA.
 
-También fue importante considerar la separación entre las piezas móviles y el uso de soportes. La comparación de las impresiones permitirá identificar cuál tuvo mejor acabado, menor tiempo y mejor movimiento de las piezas.
+También fue importante considerar la separación entre las piezas móviles y el uso de soportes. La comparación de las impresiones permitió identificar cuál tuvo mejor acabado, menor tiempo y mejor movimiento de las piezas.
 
 ## Referencias
 
-- [Tutorial del fidget toy](https://www.youtube.com/watch?v=n7AkvIi4th4).
+- [Tutorial del fidget toy](https://www.youtube.com/watch?v=n7AkvIi4th4&t=35s).
 - Autodesk Fusion: software de diseño.
 - MakerLab de MakerWorld: generación del modelo con IA.
