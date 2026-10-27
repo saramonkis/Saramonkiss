@@ -1,6 +1,6 @@
 ---
 layout: default
-title: impresion 3D
+title: Impresión 3D
 nav_order: 8
 ---
 
@@ -28,39 +28,39 @@ Crear una figura con al menos dos piezas móviles y otra diseñada con IA de má
 
 ## 1. Diseño del fidget toy
 
-El diseño se realizó en **Autodesk Fusion**, siguiendo este [video tutorial](https://www.youtube.com/watch?v=n7AkvIi4th4).
+El diseño se realizó en **Autodesk Fusion**, siguiendo este [video tutorial](https://www.youtube.com/watch?v=n7AkvIi4th4&t=35s).
 
 ### Bocetos iniciales
 
 Primero dibujé el hexágono de referencia y después el perfil de las piezas. En el perfil utilicé un espesor de **1.2 mm**, una altura de **10 mm** y un ángulo de **130°**.
 
-![Boceto inicial](imagenes/fidget-paso-1.png)
+![Boceto inicial](assets/img/07-impresion3d/part1fidget.png)
 
-![Perfil con medidas](imagenes/fidget-paso-2.png)
+![Perfil con medidas](assets/img/07-impresion3d/parte2fidget.png)
 
 ### Extrusión y patrón rectangular
 
 Realicé una extrusión de **50 mm hacia cada lado**. Después apliqué un patrón rectangular de **30 repeticiones**, con un espaciado de **1.2 + 0.6 = 1.8 mm**. Los 0.6 mm corresponden a la separación considerada entre las piezas.
 
-![Extrusión](imagenes/fidget-paso-3.png)
+![Extrusión](assets/img/07-impresion3d/part3fidget.png)
 
-![Patrón rectangular](imagenes/fidget-paso-4.png)
+![Patrón rectangular](assets/img/07-impresion3d/part4fidget.png)
 
 ### Corte y patrón circular
 
 Realicé una extrusión inversa con la operación de corte para retirar el material sobrante. Después utilicé un patrón circular de **6 repeticiones alrededor del eje Z**, identificado en azul, para completar el hexágono.
 
-![Corte](imagenes/fidget-paso-5.png)
+![Corte](assets/img/07-impresion3d/part5fidget.png)
 
-![Patrón circular](imagenes/fidget-paso-6.png)
+![Patrón circular](assets/img/07-impresion3d/part6fidget.png)
 
 ### Diseño terminado
 
 Con estas operaciones obtuve el modelo completo del fidget toy.
 
-![Diseño terminado](imagenes/fidget-paso-7.png)
+![Diseño terminado](assets/img/07-impresion3d/part7fideget.png)
 
-![Otra vista del diseño](imagenes/fidget-paso-8.png)
+![Otra vista del diseño](assets/img/07-impresion3d/part8fidget.png)
 
 ---
 

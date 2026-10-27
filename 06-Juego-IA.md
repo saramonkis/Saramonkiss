@@ -1,6 +1,6 @@
 ---
 layout: default
-title: juego ia 
+title: Juego IA
 nav_order: 7
 ---
 
