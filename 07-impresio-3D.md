@@ -66,9 +66,8 @@ Con estas operaciones obtuve el modelo completo del fidget toy.
 
 La primera impresión se realizó en una **Creality CR-10 con soportes automáticos**. En la segunda impresión del mismo diseño **no se utilizaron soportes**.
 
-![Primera impresión](imagenes/fidget-impresion-1.jpg)
+![impresión 3D](assets/img/07-impresion3d/figuritagrande.jpeg)
 
-![Segunda impresión](imagenes/fidget-impresion-2.jpg)
 
 | Característica | Creality CR-10 | Segunda impresora: [modelo] |
 |---|---|---|
@@ -113,9 +112,8 @@ Preparé el modelo para imprimirlo en una **Creality CR-10 SE**, utilizando **so
 | Soportes | Automáticos |
 | Tiempo de impresión | [Completar] |
 
-![Preparación y medidas](imagenes/vader-preparacion.png)
 
-![Proceso de impresión](imagenes/vader-impresion.jpg)
+![Proceso de impresión](assets/img/07-impresion3d/creailtylabmario.jpeg)
 
 Después de imprimir se retiraron los soportes para revisar el acabado de la figura.
 
@@ -133,9 +131,7 @@ Después de imprimir se retiraron los soportes para revisar el acabado de la fig
 
 ### Darth Vader
 
-![Darth Vader terminado](imagenes/vader-resultado.jpg)
-
-![Otra vista de Darth Vader](imagenes/vader-resultado-2.jpg)
+![Darth Vader terminado](assets/img/07-impresion3d/figuritagrande.jpeg)
 
 ---
 
