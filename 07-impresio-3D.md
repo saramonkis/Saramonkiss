@@ -69,23 +69,22 @@ La primera impresión se realizó en una **Creality CR-10 con soportes automáti
 ![impresión 3D](assets/img/07-impresion3d/figuritagrande.jpeg)
 
 
-| Característica | Creality CR-10 | Segunda impresora: [modelo] |
+| Característica | Creality CR-10 SE | Creality Ender-3 V3 KE |
 |---|---|---|
-| Material | [Completar] | [Completar] |
-| Dimensiones | [Completar] | [Completar] |
-| Altura de capa | [Completar] | [Completar] |
-| Relleno | [Completar] | [Completar] |
-| Soportes | Automáticos | Sin soportes |
-| Tiempo | [Completar] | [Completar] |
-| Acabado y movimiento | [Completar] | [Completar] |
+| Material | PLA (blanco/rojo) | PLA (blanco/rojo) |
+| Dimensiones | 5 × 5 cm | 6 x 6 cm|
+| Altura de capa | No especificado | No especificado |
+| Relleno | 20% | 20% |
+| Soportes | Automáticos | Arból |
+| Tiempo | 3 - 5 horas  | 3 - 5 horas |
+| Acabado y movimiento |  Al no utilizar soportes, no fue necesario retirarlos y se facilitó la revisión del movimiento de las piezas| La pieza necesitó soportes, por lo que fue necesario retirarlos al terminar la impresión 
 
 **¿Cuál fue más rápida?**  
-[Completar con los tiempos y la diferencia entre ambas].
+El tiempo de las impresoras fue parecido, no hubo mucha diferencia sin embargo la **Creality Ender-3 V3 KE** fue un poco más rápida.
 
 **¿Cuál tuvo mejor resultado y por qué?**  
-[Comparar el acabado, el retiro de soportes y el movimiento de las piezas].
+La impresión realizada en la **Creality Ender-3 V3 KE** Fue un poco más rápida y eficiente ya que se usaron soportes de arból. Esto también permitió revisar de manera más directa el movimiento de las piezas. En cambio, la impresión realizada en la **Creality CR-10 SE** utilizó soportes automáticos, en los cuales tuve dificultades en removerlos.
 
-La diferencia en el uso de soportes y los demás ajustes se tomará en cuenta al comparar los resultados.
 
 ---
 
@@ -101,23 +100,22 @@ Para esta figura utilicé **MakerLab de MakerWorld**. Cargué una imagen de Dart
 
 ### Preparación e impresión
 
-Preparé el modelo para imprimirlo en una **Creality CR-10 SE**, utilizando **soportes automáticos**. El límite indicado para esta figura es de **5 × 5 cm**.
+Preparé el modelo para imprimirlo en una **Creality CR-10 SE**, utilizando **soportes automáticos**. El límite indicado para esta figura fue de **5 × 5 cm**.
 
 | Dato | Información |
 |---|---|
-| Dimensiones finales | [Completar ancho, fondo y alto] |
-| Material | [Completar] |
-| Altura de capa | [Completar] |
-| Relleno | [Completar] |
+| Dimensiones finales | Aproximadamente 5 × 5 × 5 cm |
+| Material | PLA blanco |
+| Altura de capa | 0.20 mm |
+| Relleno | 15 % |
 | Soportes | Automáticos |
-| Tiempo de impresión | [Completar] |
-
+| Tiempo de impresión | 3 horas |
 
 ![Proceso de impresión](assets/img/07-impresion3d/creailtylabmario.jpeg)
 
 Después de imprimir se retiraron los soportes para revisar el acabado de la figura.
 
-**Observaciones:** [Describir los detalles de la cara, el casco y cualquier dificultad al retirar los soportes].
+**Observaciones:** [Hubo dificultad al retirar los soportes ya que no se eligio de arból].
 
 ---
 
