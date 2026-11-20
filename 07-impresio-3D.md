@@ -66,7 +66,7 @@ Con estas operaciones obtuve el modelo completo del fidget toy.
 
 La primera impresión se realizó en una **Creality CR-10 con soportes automáticos**. En la segunda impresión del mismo diseño **no se utilizaron soportes**.
 
-![impresión 3D](assets/img/07-impresion3d/figuritagrande.jpeg)
+![impresión 3D](assets/img/07-impresion3d/fidgetsillossimagen.jpeg)
 
 
 | Característica | Creality CR-10 SE | Creality Ender-3 V3 KE |
