@@ -123,9 +123,8 @@ Después de imprimir se retiraron los soportes para revisar el acabado de la fig
 
 ### Fidget toys
 
-![Fidget toy de la Creality CR-10](imagenes/fidget-resultado-1.jpg)
+![Fidget toys ](assets/img/07-impresion3d/fidgetsillossimagen.jpeg)
 
-![Fidget toy de la segunda impresora](imagenes/fidget-resultado-2.jpg)
 
 ### Darth Vader
 
